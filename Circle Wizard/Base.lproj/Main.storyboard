@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jtv-LQ-OEc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Game Mode-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="CirclesViewController" customModule="Circle_Wizard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,13 +22,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Circles" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="108" y="284" width="159" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSC-Ra-NcQ">
+                                <rect key="frame" x="156" y="390" width="63" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SttartButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uAs-Ov-VR5"/>
+                                    <segue destination="qRF-UO-aSY" kind="show" id="LuI-gq-gFM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Pointless Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="123" y="334" width="129" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,21 +50,79 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ZSC-Ra-NcQ" secondAttribute="bottom" constant="200" id="C40-6s-1eX"/>
+                            <constraint firstItem="ZSC-Ra-NcQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="140" id="Ezi-Az-DLd"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" id="QWy-KP-rBG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="92" id="Qpf-qB-BWP"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="264" id="UTj-A5-QR0"/>
+                            <constraint firstItem="ZSC-Ra-NcQ" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="39" id="XYK-oZ-J3L"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSC-Ra-NcQ" secondAttribute="trailing" constant="140" id="pQ6-ig-ez2"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="92" id="wAX-EG-g9L"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Game Mode" image="CircleIcon" id="dsF-4f-ryC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-322"/>
         </scene>
-        <!--Second-->
+        <!--Circles Game Screen View Controller-->
+        <scene sceneID="ahx-D6-6px">
+            <objects>
+                <viewController id="qRF-UO-aSY" customClass="CirclesGameScreenViewController" customModule="Circle_Wizard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pJE-eU-fPR"/>
+                        <viewControllerLayoutGuide type="bottom" id="iRj-Xh-k2k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ZN-5I-lR1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="tap to spawn circles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-hl-ZTi">
+                                <rect key="frame" x="21" y="23" width="183" height="18"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-pB-2YN">
+                                <rect key="frame" x="281" y="26" width="78" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="GO BACK">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoBackButtonPressed:" destination="qRF-UO-aSY" eventType="touchUpInside" id="i0M-zx-aR2"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="5zd-Qg-5Fi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cBW-pB-2YN" firstAttribute="leading" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="77" id="ArP-9i-BOx"/>
+                            <constraint firstItem="cBW-pB-2YN" firstAttribute="trailing" secondItem="1ZN-5I-lR1" secondAttribute="trailingMargin" id="RrS-rX-ED4"/>
+                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="1dN-hl-ZTi" secondAttribute="bottom" constant="624" id="Rvg-99-EzG"/>
+                            <constraint firstItem="cBW-pB-2YN" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="6" id="eRn-Hc-wv2"/>
+                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="cBW-pB-2YN" secondAttribute="bottom" constant="626" id="fTI-pp-Wyi"/>
+                            <constraint firstItem="cBW-pB-2YN" firstAttribute="leading" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="77" id="lof-e2-rn3"/>
+                            <constraint firstItem="1dN-hl-ZTi" firstAttribute="leading" secondItem="1ZN-5I-lR1" secondAttribute="leadingMargin" constant="5" id="psy-DN-Qg9"/>
+                            <constraint firstItem="1dN-hl-ZTi" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="3" id="vdE-e3-Czy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TextField" destination="1dN-hl-ZTi" id="zp8-SP-Phj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ari-uB-Ueu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591.2" y="-343.17841079460271"/>
+        </scene>
+        <!--CirlesStoryHomeViewController-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CirlesStoryHomeViewController" id="8rJ-Kc-sve" customClass="CircleStoryHomeViewController" customModule="Circle_Wizard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -55,31 +131,153 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Circles: Story Mode" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="30" y="283" width="315" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Pointless Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="124" y="325" width="126" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQH-MR-6CN">
+                                <rect key="frame" x="170" y="350" width="35" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="s2I-SN-TSX"/>
+                                    <segue destination="gRH-Wf-2FT" kind="show" id="QH2-QW-Onf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="263" id="A6l-Ik-Sl3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zEq-FU-wV5" secondAttribute="trailing" constant="14" id="CT0-mb-5KD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HQH-MR-6CN" secondAttribute="trailing" constant="154" id="FLV-Rp-Abm"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="HQH-MR-6CN" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="154" id="Xy3-3L-iEO"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" id="oZI-VP-Bdz"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="14" id="p7N-S2-4As"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="HQH-MR-6CN" firstAttribute="top" secondItem="NDk-cv-Gan" secondAttribute="bottom" constant="8" id="tdu-8U-fYS"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="HQH-MR-6CN" secondAttribute="bottom" constant="238" id="vDk-tL-ev9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Story Mode" image="StoryIcon" id="4qs-ce-6gJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Circles Authors Note View Controller-->
+        <scene sceneID="dCz-Fr-7PS">
+            <objects>
+                <viewController id="gRH-Wf-2FT" customClass="CirclesAuthorsNoteViewController" customModule="Circle_Wizard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tMv-KI-g86"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmZ-ns-IFd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hvP-5z-aPc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWu-9d-Z3b">
+                                <rect key="frame" x="26" y="186" width="323" height="181"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Welcome to the most pointless story you will ever read. The story shall be as long as I can make it within the two days I had to work on this project, if you find the story boring, you can click the 'return' button to go back to the Intro Menu, where you can switch to Circles Mode. There should be no further questions, as the most pointless story shall begin in a moment.</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="The Author's Beginning Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dui-bB-tQa">
+                                <rect key="frame" x="82" y="158" width="211" height="20"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClT-2F-XZ3">
+                                <rect key="frame" x="282" y="588" width="77" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="ohc-m9-l6N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="top" secondItem="dui-bB-tQa" secondAttribute="bottom" constant="6" id="19a-sc-Tqn"/>
+                            <constraint firstItem="dui-bB-tQa" firstAttribute="top" secondItem="tMv-KI-g86" secondAttribute="bottom" constant="138" id="1CM-hM-QSt"/>
+                            <constraint firstItem="ClT-2F-XZ3" firstAttribute="trailing" secondItem="hvP-5z-aPc" secondAttribute="trailingMargin" id="2gU-zc-sNm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KWu-9d-Z3b" secondAttribute="trailing" constant="154" id="4DN-Us-J83"/>
+                            <constraint firstItem="xmZ-ns-IFd" firstAttribute="top" secondItem="ClT-2F-XZ3" secondAttribute="bottom" id="6Gk-hb-eYI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KWu-9d-Z3b" secondAttribute="trailing" constant="10" id="7C8-1H-PRz"/>
+                            <constraint firstItem="ClT-2F-XZ3" firstAttribute="top" secondItem="KWu-9d-Z3b" secondAttribute="bottom" constant="221" id="Jlo-GV-udM"/>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="10" id="Qag-LZ-1Na"/>
+                            <constraint firstItem="ClT-2F-XZ3" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="266" id="YrD-dY-PFB"/>
+                            <constraint firstItem="dui-bB-tQa" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="66" id="Zf3-Bo-j23"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KWu-9d-Z3b" secondAttribute="trailing" constant="10" id="Zni-1G-LHe"/>
+                            <constraint firstItem="ClT-2F-XZ3" firstAttribute="top" secondItem="KWu-9d-Z3b" secondAttribute="bottom" constant="221" id="cU3-Q7-F3X"/>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="top" secondItem="dui-bB-tQa" secondAttribute="bottom" constant="8" id="lej-Gc-9kS"/>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="10" id="vGL-2p-jc4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dui-bB-tQa" secondAttribute="trailing" constant="66" id="yAT-GO-T0v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TextField" destination="dui-bB-tQa" id="tNU-HE-SRg"/>
+                        <outlet property="TextView" destination="KWu-9d-Z3b" id="vIe-8e-r9z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMq-CU-sPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xEe-Y9-J2e">
+            <objects>
+                <viewController id="jtv-LQ-OEc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q9y-mc-h6e"/>
+                        <viewControllerLayoutGuide type="bottom" id="pIB-sp-r10"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UfV-pt-1qD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f0c3096170bd8ac65efbbddc918ce554" translatesAutoresizingMaskIntoConstraints="NO" id="POw-PJ-jzS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93516497399999998" green="0.73283066929999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyS-02-6OP">
+                                <rect key="frame" x="106" y="320" width="163" height="47"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="49"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="NEq-Ek-Dd3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qyS-02-6OP" firstAttribute="top" secondItem="q9y-mc-h6e" secondAttribute="bottom" constant="300" id="WU5-hl-ouq"/>
+                            <constraint firstItem="pIB-sp-r10" firstAttribute="top" secondItem="qyS-02-6OP" secondAttribute="bottom" constant="300" id="hKx-iU-MIl"/>
+                            <constraint firstItem="qyS-02-6OP" firstAttribute="leading" secondItem="UfV-pt-1qD" secondAttribute="leadingMargin" constant="90" id="iCC-qe-T93"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qyS-02-6OP" secondAttribute="trailing" constant="90" id="pNz-1h-Rkr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RaA-mg-kYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733.60000000000002" y="-0.44977511244377816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -102,7 +300,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="CircleIcon" width="25" height="25"/>
+        <image name="StoryIcon" width="30" height="30"/>
+        <image name="f0c3096170bd8ac65efbbddc918ce554" width="1024" height="819"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NEq-Ek-Dd3"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942AFD7F1F280417001581EC /* CirclesGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942AFD7E1F280417001581EC /* CirclesGame.swift */; };
+		94C04C131F27B8E000713D4D /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C121F27B8E000713D4D /* CirclesViewController.swift */; };
+		94C04C151F27B93000713D4D /* CircleStoryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C141F27B93000713D4D /* CircleStoryHomeViewController.swift */; };
+		94C04C171F27B96000713D4D /* CirclesAuthorsNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C161F27B96000713D4D /* CirclesAuthorsNoteViewController.swift */; };
+		94C04C191F27B99900713D4D /* CirclesGameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C181F27B99900713D4D /* CirclesGameScreenViewController.swift */; };
 		94FD311B1F26C0A600CF6A98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD311A1F26C0A600CF6A98 /* AppDelegate.swift */; };
-		94FD311D1F26C0A600CF6A98 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD311C1F26C0A600CF6A98 /* FirstViewController.swift */; };
-		94FD311F1F26C0A600CF6A98 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FD311E1F26C0A600CF6A98 /* SecondViewController.swift */; };
 		94FD31221F26C0A600CF6A98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD31201F26C0A600CF6A98 /* Main.storyboard */; };
 		94FD31241F26C0A600CF6A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FD31231F26C0A600CF6A98 /* Assets.xcassets */; };
 		94FD31271F26C0A600CF6A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FD31251F26C0A600CF6A98 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942AFD7E1F280417001581EC /* CirclesGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesGame.swift; sourceTree = "<group>"; };
+		94C04C121F27B8E000713D4D /* CirclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CirclesViewController.swift; path = ../CirclesViewController.swift; sourceTree = "<group>"; };
+		94C04C141F27B93000713D4D /* CircleStoryHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleStoryHomeViewController.swift; sourceTree = "<group>"; };
+		94C04C161F27B96000713D4D /* CirclesAuthorsNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesAuthorsNoteViewController.swift; sourceTree = "<group>"; };
+		94C04C181F27B99900713D4D /* CirclesGameScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesGameScreenViewController.swift; sourceTree = "<group>"; };
 		94FD31171F26C0A600CF6A98 /* Circle Wizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle Wizard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FD311A1F26C0A600CF6A98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94FD311C1F26C0A600CF6A98 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		94FD311E1F26C0A600CF6A98 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		94FD31211F26C0A600CF6A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FD31231F26C0A600CF6A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FD31261F26C0A600CF6A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,9 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				94FD311A1F26C0A600CF6A98 /* AppDelegate.swift */,
-				94FD311C1F26C0A600CF6A98 /* FirstViewController.swift */,
-				94FD311E1F26C0A600CF6A98 /* SecondViewController.swift */,
 				94FD31201F26C0A600CF6A98 /* Main.storyboard */,
+				94C04C181F27B99900713D4D /* CirclesGameScreenViewController.swift */,
+				942AFD7E1F280417001581EC /* CirclesGame.swift */,
+				94C04C161F27B96000713D4D /* CirclesAuthorsNoteViewController.swift */,
+				94C04C141F27B93000713D4D /* CircleStoryHomeViewController.swift */,
+				94C04C121F27B8E000713D4D /* CirclesViewController.swift */,
 				94FD31231F26C0A600CF6A98 /* Assets.xcassets */,
 				94FD31251F26C0A600CF6A98 /* LaunchScreen.storyboard */,
 				94FD31281F26C0A600CF6A98 /* Info.plist */,
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FD311F1F26C0A600CF6A98 /* SecondViewController.swift in Sources */,
+				94C04C131F27B8E000713D4D /* CirclesViewController.swift in Sources */,
+				94C04C171F27B96000713D4D /* CirclesAuthorsNoteViewController.swift in Sources */,
 				94FD311B1F26C0A600CF6A98 /* AppDelegate.swift in Sources */,
-				94FD311D1F26C0A600CF6A98 /* FirstViewController.swift in Sources */,
+				94C04C151F27B93000713D4D /* CircleStoryHomeViewController.swift in Sources */,
+				94C04C191F27B99900713D4D /* CirclesGameScreenViewController.swift in Sources */,
+				942AFD7F1F280417001581EC /* CirclesGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +315,7 @@
 				94FD312D1F26C0A600CF6A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
