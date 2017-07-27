@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		942AFD7F1F280417001581EC /* CirclesGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942AFD7E1F280417001581EC /* CirclesGame.swift */; };
 		94C04C131F27B8E000713D4D /* CirclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C121F27B8E000713D4D /* CirclesViewController.swift */; };
 		94C04C151F27B93000713D4D /* CircleStoryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C141F27B93000713D4D /* CircleStoryHomeViewController.swift */; };
 		94C04C171F27B96000713D4D /* CirclesAuthorsNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C04C161F27B96000713D4D /* CirclesAuthorsNoteViewController.swift */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		942AFD7E1F280417001581EC /* CirclesGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesGame.swift; sourceTree = "<group>"; };
 		94C04C121F27B8E000713D4D /* CirclesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CirclesViewController.swift; path = ../CirclesViewController.swift; sourceTree = "<group>"; };
 		94C04C141F27B93000713D4D /* CircleStoryHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleStoryHomeViewController.swift; sourceTree = "<group>"; };
 		94C04C161F27B96000713D4D /* CirclesAuthorsNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesAuthorsNoteViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				94FD311A1F26C0A600CF6A98 /* AppDelegate.swift */,
 				94FD31201F26C0A600CF6A98 /* Main.storyboard */,
 				94C04C181F27B99900713D4D /* CirclesGameScreenViewController.swift */,
-				942AFD7E1F280417001581EC /* CirclesGame.swift */,
 				94C04C161F27B96000713D4D /* CirclesAuthorsNoteViewController.swift */,
 				94C04C141F27B93000713D4D /* CircleStoryHomeViewController.swift */,
 				94C04C121F27B8E000713D4D /* CirclesViewController.swift */,
@@ -153,7 +150,6 @@
 				94FD311B1F26C0A600CF6A98 /* AppDelegate.swift in Sources */,
 				94C04C151F27B93000713D4D /* CircleStoryHomeViewController.swift in Sources */,
 				94C04C191F27B99900713D4D /* CirclesGameScreenViewController.swift in Sources */,
-				942AFD7F1F280417001581EC /* CirclesGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
