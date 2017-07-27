@@ -86,8 +86,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="STARE AT THE CIRCLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-hl-ZTi">
-                                <rect key="frame" x="21" y="23" width="198" height="18"/>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="STARE AT THE CIRCLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-hl-ZTi">
+                                <rect key="frame" x="16" y="73" width="198" height="32"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
@@ -95,8 +95,8 @@
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-cj-LYl">
-                                <rect key="frame" x="281" y="23" width="78" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-cj-LYl">
+                                <rect key="frame" x="281" y="28" width="78" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="GO BACK">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -105,21 +105,25 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="Xc3-0z-P6G"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="afe-cA-5Qw">
-                                <rect key="frame" x="21" y="181" width="338" height="329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="afe-cA-5Qw">
+                                <rect key="frame" x="21" y="215" width="338" height="323"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="trailing" secondItem="1ZN-5I-lR1" secondAttribute="trailingMargin" id="7kd-ZN-tku"/>
-                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="Z3d-cj-LYl" secondAttribute="bottom" constant="565" id="MY9-vL-tT0"/>
-                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="3" id="Ml1-Qu-szl"/>
-                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="1dN-hl-ZTi" secondAttribute="bottom" constant="624" id="Rvg-99-EzG"/>
-                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="leading" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="77" id="X3s-H0-mj8"/>
-                            <constraint firstItem="1dN-hl-ZTi" firstAttribute="leading" secondItem="1ZN-5I-lR1" secondAttribute="leadingMargin" constant="5" id="psy-DN-Qg9"/>
-                            <constraint firstItem="1dN-hl-ZTi" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="3" id="vdE-e3-Czy"/>
+                            <constraint firstItem="afe-cA-5Qw" firstAttribute="top" secondItem="1dN-hl-ZTi" secondAttribute="bottom" constant="110" id="0At-7r-9oi"/>
+                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="afe-cA-5Qw" secondAttribute="bottom" constant="80" id="5kp-Rr-LTX"/>
+                            <constraint firstItem="1dN-hl-ZTi" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="53" id="DXc-gu-7QD"/>
+                            <constraint firstItem="afe-cA-5Qw" firstAttribute="leading" secondItem="1ZN-5I-lR1" secondAttribute="leadingMargin" constant="5" id="GPN-du-rnd"/>
+                            <constraint firstItem="afe-cA-5Qw" firstAttribute="top" secondItem="1dN-hl-ZTi" secondAttribute="bottom" constant="110" id="R39-NO-xv0"/>
+                            <constraint firstItem="afe-cA-5Qw" firstAttribute="trailing" secondItem="1ZN-5I-lR1" secondAttribute="trailingMargin" id="SAr-RO-43g"/>
+                            <constraint firstItem="afe-cA-5Qw" firstAttribute="top" secondItem="Z3d-cj-LYl" secondAttribute="bottom" constant="157" id="VaE-pJ-xNO"/>
+                            <constraint firstItem="1dN-hl-ZTi" firstAttribute="leading" secondItem="1ZN-5I-lR1" secondAttribute="leadingMargin" id="Wtx-zC-X71"/>
+                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="leading" secondItem="1ZN-5I-lR1" secondAttribute="leadingMargin" constant="265" id="evJ-ye-lSh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="145" id="gGF-xN-1hQ"/>
+                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="8" id="ijh-6Y-y3L"/>
+                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="trailing" secondItem="1ZN-5I-lR1" secondAttribute="trailingMargin" id="lOD-Ok-cgE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -207,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWu-9d-Z3b">
-                                <rect key="frame" x="26" y="186" width="323" height="181"/>
+                                <rect key="frame" x="16" y="186" width="343" height="181"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -233,9 +237,8 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="ohc-m9-l6N"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rt-qp-WKR">
-                                <rect key="frame" x="263" y="417" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rt-qp-WKR">
+                                <rect key="frame" x="263" y="375" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -247,20 +250,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="top" secondItem="dui-bB-tQa" secondAttribute="bottom" constant="6" id="19a-sc-Tqn"/>
                             <constraint firstItem="dui-bB-tQa" firstAttribute="top" secondItem="tMv-KI-g86" secondAttribute="bottom" constant="138" id="1CM-hM-QSt"/>
                             <constraint firstItem="ClT-2F-XZ3" firstAttribute="trailing" secondItem="hvP-5z-aPc" secondAttribute="trailingMargin" id="2gU-zc-sNm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KWu-9d-Z3b" secondAttribute="trailing" constant="154" id="4DN-Us-J83"/>
                             <constraint firstItem="xmZ-ns-IFd" firstAttribute="top" secondItem="ClT-2F-XZ3" secondAttribute="bottom" id="6Gk-hb-eYI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KWu-9d-Z3b" secondAttribute="trailing" constant="10" id="7C8-1H-PRz"/>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="trailing" secondItem="hvP-5z-aPc" secondAttribute="trailingMargin" id="8Aj-EK-Zpw"/>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" id="FcM-gW-ui9"/>
                             <constraint firstItem="ClT-2F-XZ3" firstAttribute="top" secondItem="KWu-9d-Z3b" secondAttribute="bottom" constant="221" id="Jlo-GV-udM"/>
-                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="10" id="Qag-LZ-1Na"/>
+                            <constraint firstItem="3Rt-qp-WKR" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="247" id="QsJ-X8-kqd"/>
+                            <constraint firstItem="3Rt-qp-WKR" firstAttribute="trailing" secondItem="hvP-5z-aPc" secondAttribute="trailingMargin" id="TBQ-Za-9F8"/>
                             <constraint firstItem="ClT-2F-XZ3" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="266" id="YrD-dY-PFB"/>
                             <constraint firstItem="dui-bB-tQa" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="66" id="Zf3-Bo-j23"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KWu-9d-Z3b" secondAttribute="trailing" constant="10" id="Zni-1G-LHe"/>
                             <constraint firstItem="ClT-2F-XZ3" firstAttribute="top" secondItem="KWu-9d-Z3b" secondAttribute="bottom" constant="221" id="cU3-Q7-F3X"/>
+                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="top" secondItem="dui-bB-tQa" secondAttribute="bottom" constant="8" id="i86-VC-U4d"/>
+                            <constraint firstItem="ClT-2F-XZ3" firstAttribute="top" secondItem="3Rt-qp-WKR" secondAttribute="bottom" constant="183" id="jmt-bk-7jd"/>
                             <constraint firstItem="KWu-9d-Z3b" firstAttribute="top" secondItem="dui-bB-tQa" secondAttribute="bottom" constant="8" id="lej-Gc-9kS"/>
-                            <constraint firstItem="KWu-9d-Z3b" firstAttribute="leading" secondItem="hvP-5z-aPc" secondAttribute="leadingMargin" constant="10" id="vGL-2p-jc4"/>
+                            <constraint firstItem="3Rt-qp-WKR" firstAttribute="top" secondItem="KWu-9d-Z3b" secondAttribute="bottom" constant="8" symbolic="YES" id="pdg-ly-eZl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dui-bB-tQa" secondAttribute="trailing" constant="66" id="yAT-GO-T0v"/>
                         </constraints>
                     </view>
@@ -271,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMq-CU-sPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="359"/>
+            <point key="canvasLocation" x="1589.5999999999999" y="358.4707646176912"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dfQ-eX-NSF">
@@ -292,7 +296,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jv-Px-uqi">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -302,7 +306,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ1-de-1ag">
-                                <rect key="frame" x="16" y="191" width="343" height="262"/>
+                                <rect key="frame" x="16" y="191" width="343" height="311"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Hello. Nice to meet you, I am the Author and Creator of your story and this app. I have now absorbed you into this fictional realm.
 
@@ -316,7 +320,7 @@ I will tell you what your real name is, if you promise to not spam continue and 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHv-nd-BYM">
-                                <rect key="frame" x="267" y="461" width="92" height="30"/>
+                                <rect key="frame" x="267" y="510" width="92" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -480,20 +484,8 @@ I will tell you what your real name is, if you promise to not spam continue and 
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-0k-2xh">
-                                <rect key="frame" x="16" y="117" width="343" height="382.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">It is Ronn (Which according to Google Translate means ‘Round’ in Luxembourgish) Krees (Which according to Google Translate means ‘Circle’ in Luxembourgish). Yes, your real name is Ronn Krees, (which probably translates to Round Circle). 
-
-You are not some anti-socialite who is staring at your phone, but actually the Circle Wizard of the Circle Clan, and one of the co-leaders of the Circle Clan’s Round Cult, and the Circle Wizard of the Round Table, which is lead by the leader of the Circle Tribe.
-
-As the powerful Circle Wizard, no one actually knows your identity as the wizard except for your parents, and, of course, the former Circle Wizard, but they are now dead, due to unfortunate reasons. All of your friends know you as Ronn Krees, the person with the worst grades in the school, since 50% of protagonists in stories do bad at school, the other 50% are super-geniuses, it’s just how it is.
-</string>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-ce-Ion">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="272" y="526" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -503,7 +495,7 @@ As the powerful Circle Wizard, no one actually knows your identity as the wizard
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-KU-Dbh">
-                                <rect key="frame" x="252" y="487" width="92" height="30"/>
+                                <rect key="frame" x="252" y="470" width="92" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -512,30 +504,42 @@ As the powerful Circle Wizard, no one actually knows your identity as the wizard
                                     <segue destination="axW-Wf-qqG" kind="show" id="Csd-69-Yb9"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-0k-2xh">
+                                <rect key="frame" x="16" y="117" width="343" height="345"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">It is Ronn (Which according to Google Translate means ‘Round’ in Luxembourgish) Krees (Which according to Google Translate means ‘Circle’ in Luxembourgish). Yes, your real name is Ronn Krees, (which probably translates to Round Circle). 
+
+You are not some anti-socialite who is staring at your phone, but actually the Circle Wizard of the Circle Clan, and one of the co-leaders of the Circle Clan’s Circle Cult, and the Circle Wizard of the Round Table, which is lead by the leader of the Circle Tribe.
+
+As the powerful Circle Wizard, no one actually knows your identity as the wizard except for your parents, and, of course, the former Circle Wizard, but they are now dead, due to unfortunate reasons. All of your friends know you as Ronn Krees, the person with the worst grades in the school, since 50% of protagonists in stories do bad at school, the other 50% are super-geniuses, it’s just how it is.
+</mutableString>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BKC-ce-Ion" firstAttribute="trailing" secondItem="LiR-00-wKw" secondAttribute="trailingMargin" id="0s7-V2-Jg2"/>
-                            <constraint firstItem="BKC-ce-Ion" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" constant="271" id="DjT-HF-GGz"/>
-                            <constraint firstItem="OBl-AV-dt1" firstAttribute="top" secondItem="BKC-ce-Ion" secondAttribute="bottom" constant="8" id="R2r-ZZ-JZW"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="trailing" secondItem="LiR-00-wKw" secondAttribute="trailingMargin" id="4F6-oL-5nU"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="top" secondItem="jrV-13-7N1" secondAttribute="bottom" constant="18" id="9Tj-Qj-Ocf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BKC-ce-Ion" secondAttribute="trailing" constant="15" id="KuU-kJ-Yof"/>
+                            <constraint firstItem="BKC-ce-Ion" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" constant="256" id="NmA-2z-90h"/>
                             <constraint firstItem="jrV-13-7N1" firstAttribute="top" secondItem="Ycj-fp-E7B" secondAttribute="bottom" constant="45" id="Rfm-yN-OM6"/>
-                            <constraint firstItem="JN9-0k-2xh" firstAttribute="top" secondItem="jrV-13-7N1" secondAttribute="bottom" constant="14" id="RgI-Ku-J9K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eGN-KU-Dbh" secondAttribute="trailing" constant="15" id="SOG-8F-M76"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jrV-13-7N1" secondAttribute="trailing" constant="241" id="TQY-iF-cdU"/>
                             <constraint firstItem="eGN-KU-Dbh" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" constant="236" id="VhI-vD-cTT"/>
                             <constraint firstItem="JN9-0k-2xh" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" id="WFV-6t-YkD"/>
                             <constraint firstItem="jrV-13-7N1" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" id="WMb-7s-VDT"/>
-                            <constraint firstItem="BKC-ce-Ion" firstAttribute="top" secondItem="JN9-0k-2xh" secondAttribute="bottom" constant="80.5" id="Wht-6j-pPc"/>
-                            <constraint firstItem="eGN-KU-Dbh" firstAttribute="top" secondItem="Ycj-fp-E7B" secondAttribute="bottom" constant="467" id="awc-fH-tQh"/>
+                            <constraint firstItem="OBl-AV-dt1" firstAttribute="top" secondItem="BKC-ce-Ion" secondAttribute="bottom" constant="62" id="be3-Po-adw"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" id="egu-PO-eyX"/>
                             <constraint firstItem="JN9-0k-2xh" firstAttribute="trailing" secondItem="LiR-00-wKw" secondAttribute="trailingMargin" id="o6g-d2-Ait"/>
-                            <constraint firstItem="JN9-0k-2xh" firstAttribute="top" secondItem="jrV-13-7N1" secondAttribute="bottom" constant="18" id="pvq-Kj-ubu"/>
-                            <constraint firstItem="BKC-ce-Ion" firstAttribute="top" secondItem="eGN-KU-Dbh" secondAttribute="bottom" constant="63" id="qlk-nJ-5N8"/>
+                            <constraint firstItem="BKC-ce-Ion" firstAttribute="top" secondItem="eGN-KU-Dbh" secondAttribute="bottom" constant="26" id="rGe-e1-e3M"/>
+                            <constraint firstItem="eGN-KU-Dbh" firstAttribute="top" secondItem="JN9-0k-2xh" secondAttribute="bottom" constant="8" id="wlY-iW-cKt"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nak-SI-5PW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3039" y="358"/>
+            <point key="canvasLocation" x="3037.5999999999999" y="357.57121439280365"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Uz7-6y-XgX">
@@ -556,7 +560,7 @@ As the powerful Circle Wizard, no one actually knows your identity as the wizard
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABn-oI-f2G">
-                                <rect key="frame" x="16" y="159" width="343" height="308.5"/>
+                                <rect key="frame" x="16" y="159" width="343" height="358"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">The Circle Clan is a large clan located in a secret base at precisely at 0 longitude, 0 latitude on the planet Earth, the Evolved Earth. This Evolved Earth has powers and development (and a lot of human testing, which is quite sad, but since you received your circular powers from that kind of testing done on someone in your family a few generations back, I guess it’s ok? It really depends on your perspective, it really does). 
 
@@ -566,7 +570,7 @@ The world is divided into clans, some of the most powerful being the groups labe
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dy-0A-kBe">
-                                <rect key="frame" x="248" y="423" width="96" height="30"/>
+                                <rect key="frame" x="248" y="472" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -576,7 +580,7 @@ The world is divided into clans, some of the most powerful being the groups labe
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saq-Th-6uP">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -589,9 +593,9 @@ The world is divided into clans, some of the most powerful being the groups labe
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9dy-0A-kBe" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" constant="232" id="0RC-Uj-YxE"/>
-                            <constraint firstItem="ABn-oI-f2G" firstAttribute="top" secondItem="fbU-Oe-ASc" secondAttribute="bottom" constant="56" id="3PK-cX-zB2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fbU-Oe-ASc" secondAttribute="trailing" constant="241" id="3r9-Sl-DbD"/>
                             <constraint firstItem="fbU-Oe-ASc" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" id="4W6-cD-3Li"/>
+                            <constraint firstItem="9dy-0A-kBe" firstAttribute="top" secondItem="g9f-Cf-wzH" secondAttribute="bottom" constant="452" id="AUi-ir-JvP"/>
                             <constraint firstItem="saq-Th-6uP" firstAttribute="top" secondItem="9dy-0A-kBe" secondAttribute="bottom" constant="127" id="Hth-Ua-8HU"/>
                             <constraint firstItem="fbU-Oe-ASc" firstAttribute="top" secondItem="g9f-Cf-wzH" secondAttribute="bottom" constant="45" id="KEA-U2-e9h"/>
                             <constraint firstItem="ABn-oI-f2G" firstAttribute="top" secondItem="fbU-Oe-ASc" secondAttribute="bottom" constant="60" id="MRK-JP-57H"/>
@@ -599,7 +603,6 @@ The world is divided into clans, some of the most powerful being the groups labe
                             <constraint firstItem="ABn-oI-f2G" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" id="WWR-Vy-qi9"/>
                             <constraint firstItem="Xsx-XC-Hmm" firstAttribute="top" secondItem="saq-Th-6uP" secondAttribute="bottom" constant="8" id="hPn-R2-EXw"/>
                             <constraint firstItem="saq-Th-6uP" firstAttribute="top" secondItem="ABn-oI-f2G" secondAttribute="bottom" constant="112.5" id="kCN-A8-57i"/>
-                            <constraint firstItem="9dy-0A-kBe" firstAttribute="top" secondItem="g9f-Cf-wzH" secondAttribute="bottom" constant="403" id="nFX-3O-FUg"/>
                             <constraint firstItem="saq-Th-6uP" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" constant="271" id="q9X-8t-O3e"/>
                             <constraint firstItem="saq-Th-6uP" firstAttribute="trailing" secondItem="mLG-JV-bZb" secondAttribute="trailingMargin" id="sKg-GE-XJl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9dy-0A-kBe" secondAttribute="trailing" constant="15" id="soZ-NR-0Sf"/>
@@ -630,7 +633,7 @@ The world is divided into clans, some of the most powerful being the groups labe
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-pH-tcz">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -640,7 +643,7 @@ The world is divided into clans, some of the most powerful being the groups labe
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu1-4N-LzH">
-                                <rect key="frame" x="267" y="450" width="92" height="30"/>
+                                <rect key="frame" x="267" y="499" width="92" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -649,7 +652,7 @@ The world is divided into clans, some of the most powerful being the groups labe
                                     <segue destination="LEx-Dr-Y9k" kind="show" id="Bn5-vx-2Lp"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H09-nf-IMe">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H09-nf-IMe">
                                 <rect key="frame" x="16" y="125" width="343" height="329"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">This of course is a time with powerful clans, so in order for some story to start, I must let you know this is a stage of ‘Neutral Times’ which is a two year period in the middle of wars. Clans want to be dominant, but not just with military force, but with culture as well. During these calmer times, leaders of clans fund for cultural advancements and traditions. Luckily since you became the Circle Wizard during a time of peace; (two years ago at the start of the current Neutral Time) you haven’t had to fight. Of course, soon, this time will end and your life will be fairly chaotic. 
@@ -670,14 +673,13 @@ There will be options where you can pick things to say, so that’s where the 1%
                             <constraint firstItem="Eu1-4N-LzH" firstAttribute="leading" secondItem="yw8-HN-dTn" secondAttribute="leadingMargin" constant="251" id="5iw-Sj-GBT"/>
                             <constraint firstItem="H09-nf-IMe" firstAttribute="top" secondItem="yPx-cL-yqs" secondAttribute="bottom" constant="26" id="5o3-km-HEy"/>
                             <constraint firstItem="yPx-cL-yqs" firstAttribute="top" secondItem="sXN-2O-900" secondAttribute="bottom" constant="45" id="6Ym-dc-2tg"/>
-                            <constraint firstItem="H09-nf-IMe" firstAttribute="top" secondItem="yPx-cL-yqs" secondAttribute="bottom" constant="22" id="Buv-t6-1Q9"/>
-                            <constraint firstItem="Eu1-4N-LzH" firstAttribute="top" secondItem="H09-nf-IMe" secondAttribute="bottom" id="G5W-nj-Uia"/>
                             <constraint firstItem="Eu1-4N-LzH" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="IQF-xg-Gux"/>
                             <constraint firstItem="VMk-pH-tcz" firstAttribute="leading" secondItem="yw8-HN-dTn" secondAttribute="leadingMargin" constant="271" id="KUD-pd-9q8"/>
                             <constraint firstItem="H09-nf-IMe" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="SpE-q6-1u7"/>
                             <constraint firstItem="T0A-JU-b64" firstAttribute="top" secondItem="VMk-pH-tcz" secondAttribute="bottom" constant="8" id="c6C-Nu-zgd"/>
-                            <constraint firstItem="VMk-pH-tcz" firstAttribute="top" secondItem="H09-nf-IMe" secondAttribute="bottom" constant="130" id="eLz-zY-ddU"/>
                             <constraint firstItem="Eu1-4N-LzH" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="fUv-bO-SmX"/>
+                            <constraint firstItem="Eu1-4N-LzH" firstAttribute="top" secondItem="H09-nf-IMe" secondAttribute="bottom" constant="45" id="lJo-m4-L9p"/>
+                            <constraint firstItem="H09-nf-IMe" firstAttribute="top" secondItem="yPx-cL-yqs" secondAttribute="bottom" constant="26" id="sal-Z7-5Jm"/>
                             <constraint firstItem="VMk-pH-tcz" firstAttribute="top" secondItem="Eu1-4N-LzH" secondAttribute="bottom" constant="100" id="uA1-VG-bt2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yPx-cL-yqs" secondAttribute="trailing" constant="241" id="wIu-Af-9ks"/>
                         </constraints>
@@ -705,8 +707,8 @@ There will be options where you can pick things to say, so that’s where the 1%
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-S2-ESa">
-                                <rect key="frame" x="16" y="188" width="343" height="290"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-S2-ESa">
+                                <rect key="frame" x="16" y="185" width="343" height="339"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">This is a lot of typing, which I am doing on Google Docs to transfer into the app, and this is currently 585 words, counting my notes on when to switch slides. I can also assure that I will avoid constant interruptions dearest Ronn Krees, so you can learn more about your past and be prepared for the future.
 
@@ -720,7 +722,7 @@ There are just a few more things to learn before you begin, so stick tight or el
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rw-Z3-dl2">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -749,15 +751,14 @@ There are just a few more things to learn before you begin, so stick tight or el
                             <constraint firstItem="ToD-XG-HW0" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" id="7q6-I0-Jck"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ToD-XG-HW0" secondAttribute="trailing" constant="241" id="9Hd-EX-e9N"/>
                             <constraint firstItem="bJC-DA-M1W" firstAttribute="top" secondItem="4rw-Z3-dl2" secondAttribute="bottom" constant="8" id="JNP-OV-RDz"/>
-                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="top" secondItem="njC-gC-wK6" secondAttribute="bottom" constant="81" id="KKw-le-NDt"/>
                             <constraint firstItem="njC-gC-wK6" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" constant="232" id="MNw-B3-VRm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="njC-gC-wK6" secondAttribute="trailing" constant="19" id="R7s-9u-by6"/>
                             <constraint firstItem="njC-gC-wK6" firstAttribute="top" secondItem="0mH-7t-DQt" secondAttribute="bottom" constant="449" id="VPT-09-Fa4"/>
                             <constraint firstItem="4rw-Z3-dl2" firstAttribute="trailing" secondItem="qnZ-j5-Aor" secondAttribute="trailingMargin" id="WFK-E6-cvY"/>
-                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="top" secondItem="F0P-S2-ESa" secondAttribute="bottom" constant="105" id="cZj-j2-0N0"/>
                             <constraint firstItem="F0P-S2-ESa" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" id="dBf-ls-mpF"/>
                             <constraint firstItem="F0P-S2-ESa" firstAttribute="top" secondItem="ToD-XG-HW0" secondAttribute="bottom" constant="86" id="gSp-ym-gaj"/>
                             <constraint firstItem="4rw-Z3-dl2" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" constant="271" id="lri-i7-aTh"/>
+                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="top" secondItem="njC-gC-wK6" secondAttribute="bottom" constant="130" id="qqc-YU-HFf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -784,7 +785,7 @@ There are just a few more things to learn before you begin, so stick tight or el
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXn-bH-tP3">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -794,19 +795,19 @@ There are just a few more things to learn before you begin, so stick tight or el
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-Jk-rfI">
-                                <rect key="frame" x="16" y="137" width="343" height="345.5"/>
+                                <rect key="frame" x="16" y="137" width="343" height="395"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 Ahem.
 Continuing, you are a part of the Circle Clan, which is one of the two best Shape Clans, the other one is your rival, the Square Clan. Of course there is also something called the Shape Council, where all of the Wizards for the clans, and the leaders of the clans go every other month to debate issues. Nothing much is decided, other than the fact that the Blueberry and Pomegranate Clans are like irritating children. You’ve sat in on about 11, since your 12th one is coming up to announce the start of the War Period.
 
 You’ve met some interesting Clan Wizards, none of which you could identify if you met them out of uniform, considering they all wear drapey robes in their colors, and a hood and mask to conceal their identity as a wizard. In case you are wondering, the colors of the Circle Clan are dark blue, gold and rose.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFI-xM-AzY">
-                                <rect key="frame" x="267" y="490" width="92" height="30"/>
+                                <rect key="frame" x="267" y="539" width="92" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -824,7 +825,6 @@ You’ve met some interesting Clan Wizards, none of which you could identify if 
                             <constraint firstItem="cXn-bH-tP3" firstAttribute="top" secondItem="uFI-xM-AzY" secondAttribute="bottom" constant="60" id="Ohb-n7-fwo"/>
                             <constraint firstItem="8GL-Jk-rfI" firstAttribute="trailing" secondItem="Zv9-EG-Jbt" secondAttribute="trailingMargin" id="VIC-6A-Oio"/>
                             <constraint firstItem="e9a-Ol-83C" firstAttribute="top" secondItem="cXn-bH-tP3" secondAttribute="bottom" constant="8" id="XSI-Tc-c4j"/>
-                            <constraint firstItem="8GL-Jk-rfI" firstAttribute="top" secondItem="1rN-ia-YIT" secondAttribute="bottom" constant="34" id="b9z-2m-qUJ"/>
                             <constraint firstItem="8GL-Jk-rfI" firstAttribute="leading" secondItem="Zv9-EG-Jbt" secondAttribute="leadingMargin" id="ec9-af-XQl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1rN-ia-YIT" secondAttribute="trailing" constant="241" id="el9-1r-wht"/>
                             <constraint firstItem="8GL-Jk-rfI" firstAttribute="top" secondItem="1rN-ia-YIT" secondAttribute="bottom" constant="38" id="fS1-jj-DiE"/>
@@ -859,7 +859,7 @@ You’ve met some interesting Clan Wizards, none of which you could identify if 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sP-5U-8kL">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -869,7 +869,7 @@ You’ve met some interesting Clan Wizards, none of which you could identify if 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-XS-7qQ">
-                                <rect key="frame" x="263" y="474" width="96" height="30"/>
+                                <rect key="frame" x="263" y="523" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -879,7 +879,7 @@ You’ve met some interesting Clan Wizards, none of which you could identify if 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Am-5K-XQ8">
-                                <rect key="frame" x="16" y="149" width="343" height="316.5"/>
+                                <rect key="frame" x="16" y="149" width="343" height="366"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">You remember earlier how I mentioned things like the Round Table and The Circle Cult?
 
@@ -939,7 +939,7 @@ The Circle Cult is a bunch of people who follow the ‘Way of the Round’ you o
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoN-7Z-cLC">
-                                <rect key="frame" x="16" y="107" width="343" height="456.5"/>
+                                <rect key="frame" x="16" y="107" width="343" height="506"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Also, everyone in the Circle Cult wears clothing when they meet that conceals their identity, so no one really knows the other members, also, voice modification is a necessity on the veils, to protect the members in case the leaders of the Circle Clan stumble in on one of their secret meetings.
 
@@ -954,7 +954,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xL-3g-Kg2">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -964,7 +964,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WC-y8-YoX">
-                                <rect key="frame" x="263" y="528" width="96" height="30"/>
+                                <rect key="frame" x="263" y="577" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -981,14 +981,13 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                             <constraint firstItem="8xL-3g-Kg2" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" constant="271" id="5Fq-0I-s3h"/>
                             <constraint firstItem="6WC-y8-YoX" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" constant="247" id="6nC-8a-mjx"/>
                             <constraint firstItem="6WC-y8-YoX" firstAttribute="trailing" secondItem="c6g-Pq-Qcd" secondAttribute="trailingMargin" id="9K1-vz-TQy"/>
+                            <constraint firstItem="6WC-y8-YoX" firstAttribute="top" secondItem="1Dv-sQ-NZY" secondAttribute="bottom" constant="557" id="PR6-g2-8uN"/>
                             <constraint firstItem="XoN-7Z-cLC" firstAttribute="trailing" secondItem="c6g-Pq-Qcd" secondAttribute="trailingMargin" id="Spp-4V-6I0"/>
                             <constraint firstItem="LaX-70-kuJ" firstAttribute="top" secondItem="1Dv-sQ-NZY" secondAttribute="bottom" constant="45" id="a7Q-0n-hE3"/>
                             <constraint firstItem="8xL-3g-Kg2" firstAttribute="top" secondItem="6WC-y8-YoX" secondAttribute="bottom" constant="22" id="bWF-QF-cEJ"/>
                             <constraint firstItem="16C-DJ-dYH" firstAttribute="top" secondItem="8xL-3g-Kg2" secondAttribute="bottom" constant="8" id="emM-rE-fdq"/>
                             <constraint firstItem="8xL-3g-Kg2" firstAttribute="top" secondItem="XoN-7Z-cLC" secondAttribute="bottom" constant="16.5" id="igG-hD-8qI"/>
                             <constraint firstItem="8xL-3g-Kg2" firstAttribute="top" secondItem="XoN-7Z-cLC" secondAttribute="bottom" constant="16.5" id="kiD-Mq-maC"/>
-                            <constraint firstItem="XoN-7Z-cLC" firstAttribute="top" secondItem="LaX-70-kuJ" secondAttribute="bottom" constant="4" id="ojF-QZ-nWq"/>
-                            <constraint firstItem="6WC-y8-YoX" firstAttribute="top" secondItem="1Dv-sQ-NZY" secondAttribute="bottom" constant="508" id="tSx-TO-NSz"/>
                             <constraint firstItem="XoN-7Z-cLC" firstAttribute="top" secondItem="LaX-70-kuJ" secondAttribute="bottom" constant="8" id="uPS-Ab-OHZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LaX-70-kuJ" secondAttribute="trailing" constant="241" id="wbK-sI-RZR"/>
                             <constraint firstItem="LaX-70-kuJ" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" id="zSw-Yi-dq9"/>
@@ -1018,7 +1017,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR7-p4-TDQ">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1028,7 +1027,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNJ-Tv-HAq">
-                                <rect key="frame" x="100" y="360" width="175" height="30"/>
+                                <rect key="frame" x="100" y="409" width="175" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="GO LOOK FOR THEM">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1038,7 +1037,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irk-tP-8Rg">
-                                <rect key="frame" x="64" y="415" width="246" height="30"/>
+                                <rect key="frame" x="64" y="464" width="246" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE WITH THE STORY">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1048,7 +1047,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVD-pX-mLU">
-                                <rect key="frame" x="16" y="175" width="343" height="152.5"/>
+                                <rect key="frame" x="16" y="175" width="343" height="202"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">You have almost learned everything there is to learn about your current situation, except for the real problem. There are two clans that no one genuinely knows about, the only reason why I know is because I’m the author, and now you will know because I’m about to tell you. The Angel Tribe and the Devil Tribe. They contain vast amounts of power and really act opposite their names, of course no one really knows that. Now you know. Anyway, they are located in secret desolate places, so don’t try to look for them.
 </string>
@@ -1104,7 +1103,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1E-NG-dTc">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1114,7 +1113,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-L9-Vr2">
-                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <rect key="frame" x="263" y="421" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1124,7 +1123,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-lZ-Tjl">
-                                <rect key="frame" x="16" y="216" width="343" height="148"/>
+                                <rect key="frame" x="16" y="216" width="343" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Good, let’s continue.
 </string>
@@ -1136,7 +1135,6 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="LCp-c7-wCF" secondAttribute="trailing" constant="241" id="1vk-4k-I66"/>
                             <constraint firstItem="HUR-eZ-ucJ" firstAttribute="top" secondItem="U1E-NG-dTc" secondAttribute="bottom" constant="57" id="5ok-7v-mHG"/>
-                            <constraint firstItem="mlR-lZ-Tjl" firstAttribute="top" secondItem="LCp-c7-wCF" secondAttribute="bottom" constant="113" id="8oZ-By-cIu"/>
                             <constraint firstItem="mlR-lZ-Tjl" firstAttribute="leading" secondItem="Mn0-p6-wxJ" secondAttribute="leadingMargin" id="AJ2-Gp-oQv"/>
                             <constraint firstItem="LCp-c7-wCF" firstAttribute="top" secondItem="dce-l7-NC1" secondAttribute="bottom" constant="45" id="F3X-Nu-DAO"/>
                             <constraint firstItem="U1E-NG-dTc" firstAttribute="trailing" secondItem="Mn0-p6-wxJ" secondAttribute="trailingMargin" id="GQ1-D1-jUZ"/>
@@ -1176,7 +1174,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-tk-lVH">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1186,7 +1184,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-YU-Sb3">
-                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <rect key="frame" x="263" y="421" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1196,7 +1194,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-rK-ctB">
-                                <rect key="frame" x="16" y="216" width="343" height="148"/>
+                                <rect key="frame" x="16" y="216" width="343" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">No, you can’t look for them, this is the prologue. *insert my sigh here* I can’t believe you.
 </string>
@@ -1206,7 +1204,6 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vaw-rK-ctB" firstAttribute="top" secondItem="Ywr-KU-hHU" secondAttribute="bottom" constant="113" id="2Yd-fJ-MWa"/>
                             <constraint firstItem="Ywr-KU-hHU" firstAttribute="top" secondItem="2cI-8o-7t8" secondAttribute="bottom" constant="45" id="2mo-RA-FFw"/>
                             <constraint firstItem="aWJ-tk-lVH" firstAttribute="top" secondItem="JNv-YU-Sb3" secondAttribute="bottom" constant="129" id="DJK-7c-wwM"/>
                             <constraint firstItem="JNv-YU-Sb3" firstAttribute="top" secondItem="Vaw-rK-ctB" secondAttribute="bottom" constant="8" id="DyM-WC-Tdx"/>
@@ -1248,7 +1245,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fn-a6-EM7">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1258,7 +1255,7 @@ One is a Satanist and could probably be in the Circle Cult, while the other has 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-z7-x1I">
-                                <rect key="frame" x="16" y="158" width="343" height="258"/>
+                                <rect key="frame" x="16" y="158" width="343" height="307"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">So, the Angel and the Devil tribes are too powerful for their own good, and there is a possibility that they want to conquer the clans and that could easily lead to the downfall of the universe, which is horrible Ronn Krees, since you and I are in this universe. Well I am sort of in it, more like this is my universe that I helped bring to life and let you and your friends live within it.
 
@@ -1272,7 +1269,7 @@ It stings.
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTE-Eb-LCv">
-                                <rect key="frame" x="253" y="431" width="92" height="30"/>
+                                <rect key="frame" x="253" y="480" width="92" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1330,7 +1327,7 @@ It stings.
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ios-fd-9nN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ios-fd-9nN">
                                 <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
@@ -1346,7 +1343,7 @@ It stings.
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d64-ox-FFw">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d64-ox-FFw">
                                 <rect key="frame" x="16" y="116" width="343" height="410"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">So let me just review the checklist
@@ -1367,7 +1364,7 @@ It can be a branch off the main page, you know the one where I explain the Rules
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hZ-WP-k9f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hZ-WP-k9f">
                                 <rect key="frame" x="263" y="523" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
@@ -1422,7 +1419,7 @@ It can be a branch off the main page, you know the one where I explain the Rules
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDl-nY-16N">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1432,7 +1429,7 @@ It can be a branch off the main page, you know the one where I explain the Rules
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tc-nq-yAU">
-                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <rect key="frame" x="263" y="421" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1442,7 +1439,7 @@ It can be a branch off the main page, you know the one where I explain the Rules
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vX-Am-aHc">
-                                <rect key="frame" x="16" y="211" width="343" height="152.5"/>
+                                <rect key="frame" x="16" y="216" width="343" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Now I did say that the Prologue would be the time I break the fourth wall the most, but it’s for a good cause. I also said that I was going to drag this Prologue out to approximately 20 Slides, and believe it or not, this is slide 12,  you’re doing well.
 
@@ -1459,7 +1456,6 @@ I think you should know your appearance and role now, so I do think that I can s
                             <constraint firstItem="2tc-nq-yAU" firstAttribute="top" secondItem="7vX-Am-aHc" secondAttribute="bottom" constant="8.5" id="Hun-8b-QOt"/>
                             <constraint firstItem="2tc-nq-yAU" firstAttribute="top" secondItem="7vX-Am-aHc" secondAttribute="bottom" constant="8.5" id="INR-No-GUE"/>
                             <constraint firstItem="fDl-nY-16N" firstAttribute="top" secondItem="2tc-nq-yAU" secondAttribute="bottom" constant="129" id="MtN-Oo-7Uv"/>
-                            <constraint firstItem="7vX-Am-aHc" firstAttribute="top" secondItem="EKw-Go-bVK" secondAttribute="bottom" constant="112" id="NZo-hT-7IT"/>
                             <constraint firstItem="7vX-Am-aHc" firstAttribute="leading" secondItem="9Dy-eI-UBQ" secondAttribute="leadingMargin" id="QOR-1E-q6r"/>
                             <constraint firstItem="EKw-Go-bVK" firstAttribute="top" secondItem="Per-VZ-QGx" secondAttribute="bottom" constant="45" id="TMc-Aw-CLk"/>
                             <constraint firstItem="EKw-Go-bVK" firstAttribute="leading" secondItem="9Dy-eI-UBQ" secondAttribute="leadingMargin" id="Ula-Y9-JKg"/>
@@ -1516,7 +1512,7 @@ I think you should know your appearance and role now, so I do think that I can s
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFd-3K-GR7">
-                                <rect key="frame" x="16" y="212" width="343" height="152"/>
+                                <rect key="frame" x="16" y="216" width="343" height="148"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">There will times where you will have to make a choice and the story will branch, and of course I will write both sides, which is fine, but I will make one lead to death after like 2-5 slides, and you will have to restart. I feel sorry for you if you make the wrong choice, you were such a good soul Ronn Krees. You will be missed, ok?
 
@@ -1541,7 +1537,6 @@ Don’t do something you will regret.
                             <constraint firstItem="QFd-3K-GR7" firstAttribute="top" secondItem="XYx-9s-NCT" secondAttribute="bottom" constant="117" id="RWB-AQ-o1h"/>
                             <constraint firstItem="QFd-3K-GR7" firstAttribute="trailing" secondItem="4kZ-ZE-UbS" secondAttribute="trailingMargin" id="VFm-Ww-FBG"/>
                             <constraint firstItem="aQf-fG-7ll" firstAttribute="top" secondItem="QFd-3K-GR7" secondAttribute="bottom" constant="8" id="ZmO-yF-WrL"/>
-                            <constraint firstItem="QFd-3K-GR7" firstAttribute="top" secondItem="XYx-9s-NCT" secondAttribute="bottom" constant="113" id="a5h-Gn-ESg"/>
                             <constraint firstItem="uI3-JC-a4S" firstAttribute="leading" secondItem="4kZ-ZE-UbS" secondAttribute="leadingMargin" constant="271" id="aFv-Yh-XBr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XYx-9s-NCT" secondAttribute="trailing" constant="241" id="cDH-Ls-1V0"/>
                         </constraints>
@@ -1570,7 +1565,7 @@ Don’t do something you will regret.
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5l-fm-7rh">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1580,7 +1575,7 @@ Don’t do something you will regret.
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH8-iC-0Ve">
-                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <rect key="frame" x="263" y="421" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1590,7 +1585,7 @@ Don’t do something you will regret.
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-rJ-wpS">
-                                <rect key="frame" x="16" y="212" width="343" height="152"/>
+                                <rect key="frame" x="16" y="216" width="343" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">I do trust you to continue on, so maybe a 20 slide prologue is too many pages to go with. I can probably let you go on the next slide. When you wake up, you may be confused, but you really don’t have anything to worry about, considering once Chapter 1: [t title removed for spoiler reasons] starts, I will do my best to just tell the story and not interrupt.
 </string>
@@ -1607,7 +1602,6 @@ Don’t do something you will regret.
                             <constraint firstItem="J5l-fm-7rh" firstAttribute="trailing" secondItem="z6m-gx-JXd" secondAttribute="trailingMargin" id="JST-xL-VX2"/>
                             <constraint firstItem="WH8-iC-0Ve" firstAttribute="trailing" secondItem="z6m-gx-JXd" secondAttribute="trailingMargin" id="QuD-8T-HTz"/>
                             <constraint firstItem="XiK-io-wdm" firstAttribute="leading" secondItem="z6m-gx-JXd" secondAttribute="leadingMargin" id="VdW-TC-MZI"/>
-                            <constraint firstItem="I5E-rJ-wpS" firstAttribute="top" secondItem="XiK-io-wdm" secondAttribute="bottom" constant="113" id="Xt6-tp-zDD"/>
                             <constraint firstItem="I5E-rJ-wpS" firstAttribute="leading" secondItem="z6m-gx-JXd" secondAttribute="leadingMargin" id="ZRi-WX-gQF"/>
                             <constraint firstItem="mUy-Ef-Yp0" firstAttribute="top" secondItem="J5l-fm-7rh" secondAttribute="bottom" constant="57" id="ZlF-cr-Hyn"/>
                             <constraint firstItem="I5E-rJ-wpS" firstAttribute="trailing" secondItem="z6m-gx-JXd" secondAttribute="trailingMargin" id="cci-LL-FnC"/>
@@ -1648,36 +1642,37 @@ Don’t do something you will regret.
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-MU-dFw">
-                                <rect key="frame" x="16" y="164" width="343" height="238.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">
-Well done, you have reached Slide 15 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
------------------
-Status:
-Prologue: Completed
-Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
-
-</string>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqr-IG-QeF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqr-IG-QeF">
                                 <rect key="frame" x="157" y="552" width="202" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="The End For Right Now">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-MU-dFw">
+                                <rect key="frame" x="16" y="164" width="343" height="317"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+Well done, you have reached Slide 17 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
+-----------------
+Status:
+Prologue: Completed
+Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin {not included with the current version of this app}
+
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Pqr-IG-QeF" firstAttribute="trailing" secondItem="p1K-iG-lW6" secondAttribute="trailing" id="6yp-56-LKV"/>
                             <constraint firstItem="EXg-MU-dFw" firstAttribute="trailing" secondItem="95n-NY-Y8Y" secondAttribute="trailingMargin" id="9bm-Ad-S4g"/>
                             <constraint firstItem="p1K-iG-lW6" firstAttribute="trailing" secondItem="95n-NY-Y8Y" secondAttribute="trailingMargin" id="Ejc-8d-xgh"/>
-                            <constraint firstItem="EXg-MU-dFw" firstAttribute="top" secondItem="axg-bv-DmZ" secondAttribute="bottom" constant="70" id="Jug-DL-TCW"/>
+                            <constraint firstItem="EXg-MU-dFw" firstAttribute="top" secondItem="axg-bv-DmZ" secondAttribute="bottom" constant="65" id="G1z-xf-fkv"/>
+                            <constraint firstItem="Pqr-IG-QeF" firstAttribute="top" secondItem="EXg-MU-dFw" secondAttribute="bottom" constant="71" id="L8m-rE-hQL"/>
                             <constraint firstItem="p1K-iG-lW6" firstAttribute="leading" secondItem="95n-NY-Y8Y" secondAttribute="leadingMargin" constant="271" id="NHZ-zy-PCz"/>
-                            <constraint firstItem="EXg-MU-dFw" firstAttribute="top" secondItem="axg-bv-DmZ" secondAttribute="bottom" constant="65" id="V2P-6f-vcr"/>
+                            <constraint firstItem="tMd-GT-hWB" firstAttribute="top" secondItem="Pqr-IG-QeF" secondAttribute="bottom" constant="85" id="TL7-cb-rZJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="axg-bv-DmZ" secondAttribute="trailing" constant="241" id="Wi1-Rm-akA"/>
                             <constraint firstItem="axg-bv-DmZ" firstAttribute="top" secondItem="uUv-As-5J2" secondAttribute="bottom" constant="45" id="d7T-Rd-f7I"/>
                             <constraint firstItem="EXg-MU-dFw" firstAttribute="leading" secondItem="95n-NY-Y8Y" secondAttribute="leadingMargin" id="ien-Lw-7bj"/>
@@ -1718,44 +1713,47 @@ Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
                                     <segue destination="49e-Tb-3d3" kind="show" id="u3x-Bh-qRo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jac-TQ-YHU">
-                                <rect key="frame" x="263" y="421" width="96" height="30"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
-                                <state key="normal" title="CONTINUE">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-S5-So4">
-                                <rect key="frame" x="16" y="212" width="343" height="219"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-S5-So4">
+                                <rect key="frame" x="16" y="196" width="343" height="263"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Well done, you have reached Slide 15 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
+                                <string key="text">Well done, you have reached Slide 17 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
 -----------------
 Status:
 Prologue: Completed
 Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
-</string>
+{rest of story not included with this version of the app}</string>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jac-TQ-YHU">
+                                <rect key="frame" x="82" y="542" width="277" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="Rest of story not released yet">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="1QM-Bq-mGg"/>
+                            <constraint firstItem="AO5-S5-So4" firstAttribute="top" secondItem="2DG-NB-yhQ" secondAttribute="bottom" constant="97" id="35r-6x-Cug"/>
                             <constraint firstItem="2DG-NB-yhQ" firstAttribute="top" secondItem="9ct-9u-1oS" secondAttribute="bottom" constant="45" id="5Zw-jC-ODN"/>
-                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="jac-TQ-YHU" secondAttribute="bottom" constant="129" id="C2x-ml-Owg"/>
+                            <constraint firstItem="AO5-S5-So4" firstAttribute="top" secondItem="2DG-NB-yhQ" secondAttribute="bottom" constant="97" id="Cl7-qH-WyO"/>
                             <constraint firstItem="jac-TQ-YHU" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="E4O-uy-1w6"/>
                             <constraint firstItem="2DG-NB-yhQ" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" id="EeN-zX-86H"/>
-                            <constraint firstItem="AO5-S5-So4" firstAttribute="top" secondItem="2DG-NB-yhQ" secondAttribute="bottom" constant="117" id="I72-lY-OMm"/>
-                            <constraint firstItem="jac-TQ-YHU" firstAttribute="top" secondItem="9ct-9u-1oS" secondAttribute="bottom" constant="401" id="O3z-6K-bm5"/>
-                            <constraint firstItem="uVY-Dd-un1" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="271" id="OUe-AS-JaF"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="66" id="Lo8-eo-rna"/>
                             <constraint firstItem="uVY-Dd-un1" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="OZF-mG-gnB"/>
-                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="jac-TQ-YHU" secondAttribute="bottom" constant="129" id="P0N-xz-148"/>
                             <constraint firstItem="AO5-S5-So4" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="Qpu-X6-dZ2"/>
-                            <constraint firstItem="jac-TQ-YHU" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="247" id="Rka-dC-Dou"/>
-                            <constraint firstItem="8ng-tH-UvA" firstAttribute="top" secondItem="uVY-Dd-un1" secondAttribute="bottom" constant="57" id="T9A-Or-DFa"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="jac-TQ-YHU" secondAttribute="bottom" constant="8" id="Qpv-O3-eof"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="271" id="UyT-h0-1KK"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="66" id="a4P-jw-sK3"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="top" secondItem="AO5-S5-So4" secondAttribute="bottom" constant="83" id="cX3-sU-AIL"/>
                             <constraint firstItem="AO5-S5-So4" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" id="d9o-bo-gPx"/>
-                            <constraint firstItem="AO5-S5-So4" firstAttribute="top" secondItem="2DG-NB-yhQ" secondAttribute="bottom" constant="113" id="lcd-65-2Os"/>
+                            <constraint firstItem="8ng-tH-UvA" firstAttribute="top" secondItem="uVY-Dd-un1" secondAttribute="bottom" constant="8" id="jx4-Iw-iRg"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="ljl-sk-vKf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2DG-NB-yhQ" secondAttribute="trailing" constant="241" id="mK7-YM-v47"/>
-                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="AO5-S5-So4" secondAttribute="bottom" constant="149" id="t8a-qS-5OI"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="qFl-di-77E"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="jac-TQ-YHU" secondAttribute="bottom" constant="8" id="tYx-Fn-eqW"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1771,7 +1769,7 @@ Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
         <image name="f0c3096170bd8ac65efbbddc918ce554" width="1024" height="819"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NEq-Ek-Dd3"/>
-        <segue reference="tcm-Zm-mPZ"/>
+        <segue reference="u3x-Bh-qRo"/>
+        <segue reference="7FT-dZ-dhI"/>
     </inferredMetricsTieBreakers>
 </document>
