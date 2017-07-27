@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDA-6a-JHj">
-                                <rect key="frame" x="137" y="158" width="100" height="100"/>
+                                <rect key="frame" x="102" y="248" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Image"/>
                                 <connections>
@@ -210,7 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWu-9d-Z3b">
-                                <rect key="frame" x="16" y="186" width="343" height="181"/>
+                                <rect key="frame" x="16" y="186" width="343" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -229,7 +229,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClT-2F-XZ3">
-                                <rect key="frame" x="282" y="588" width="77" height="30"/>
+                                <rect key="frame" x="282" y="637" width="77" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN"/>
                                 <connections>
@@ -237,7 +237,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rt-qp-WKR">
-                                <rect key="frame" x="263" y="375" width="96" height="30"/>
+                                <rect key="frame" x="263" y="424" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -484,7 +484,7 @@ I will tell you what your real name is, if you promise to not spam continue and 
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-ce-Ion">
-                                <rect key="frame" x="272" y="526" width="72" height="30"/>
+                                <rect key="frame" x="272" y="575" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -494,7 +494,7 @@ I will tell you what your real name is, if you promise to not spam continue and 
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-KU-Dbh">
-                                <rect key="frame" x="252" y="470" width="92" height="30"/>
+                                <rect key="frame" x="252" y="519" width="92" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -504,14 +504,14 @@ I will tell you what your real name is, if you promise to not spam continue and 
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-0k-2xh">
-                                <rect key="frame" x="16" y="117" width="343" height="345"/>
+                                <rect key="frame" x="16" y="117" width="343" height="394"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">It is Ronn (Which according to Google Translate means ‘Round’ in Luxembourgish) Krees (Which according to Google Translate means ‘Circle’ in Luxembourgish). Yes, your real name is Ronn Krees, (which probably translates to Round Circle). 
+                                <string key="text">It is Ronn (Which according to Google Translate means ‘Round’ in Luxembourgish) Krees (Which according to Google Translate means ‘Circle’ in Luxembourgish). Yes, your real name is Ronn Krees, (which probably translates to Round Circle). 
 
 You are not some anti-socialite who is staring at your phone, but actually the Circle Wizard of the Circle Clan, and one of the co-leaders of the Circle Clan’s Circle Cult, and the Circle Wizard of the Round Table, which is lead by the leader of the Circle Tribe.
 
 As the powerful Circle Wizard, no one actually knows your identity as the wizard except for your parents, and, of course, the former Circle Wizard, but they are now dead, due to unfortunate reasons. All of your friends know you as Ronn Krees, the person with the worst grades in the school, since 50% of protagonists in stories do bad at school, the other 50% are super-geniuses, it’s just how it is.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1491,7 +1491,7 @@ I think you should know your appearance and role now, so I do think that I can s
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI3-JC-a4S">
-                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1501,7 +1501,7 @@ I think you should know your appearance and role now, so I do think that I can s
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-fG-7ll">
-                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <rect key="frame" x="263" y="421" width="96" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1511,7 +1511,7 @@ I think you should know your appearance and role now, so I do think that I can s
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFd-3K-GR7">
-                                <rect key="frame" x="16" y="216" width="343" height="148"/>
+                                <rect key="frame" x="16" y="216" width="343" height="197"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">There will times where you will have to make a choice and the story will branch, and of course I will write both sides, which is fine, but I will make one lead to death after like 2-5 slides, and you will have to restart. I feel sorry for you if you make the wrong choice, you were such a good soul Ronn Krees. You will be missed, ok?
 
@@ -1703,7 +1703,7 @@ Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin {not include
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-Dd-un1">
-                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <rect key="frame" x="287" y="629" width="72" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="RETURN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1713,7 +1713,7 @@ Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin {not include
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-S5-So4">
-                                <rect key="frame" x="16" y="196" width="343" height="263"/>
+                                <rect key="frame" x="16" y="196" width="343" height="312"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Well done, you have reached Slide 17 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
 -----------------
@@ -1725,7 +1725,7 @@ Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jac-TQ-YHU">
-                                <rect key="frame" x="82" y="542" width="277" height="30"/>
+                                <rect key="frame" x="82" y="591" width="277" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="Rest of story not released yet">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
