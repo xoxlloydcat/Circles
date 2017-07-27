@@ -67,8 +67,10 @@ class CircleScene: SKScene {
 
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let bullet = SKSpriteNode(imageNamed: "image" )
+        let bullet = SKSpriteNode(imageNamed: "Image" )
+        
         bullet.size = CGSize(width: 75, height: 75)
+        
         bullet.position = CGPoint(x: hero.position.x, y: hero.position.y)
         
         

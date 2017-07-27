@@ -15,9 +15,6 @@ class CirclesAuthorsNoteViewController: UIViewController {
     @IBOutlet weak var TextView: UITextView!
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -13,7 +13,6 @@ class CircleStoryHomeViewController: UIViewController {
     
     @IBAction func StartButtonPressed(_ sender: Any) {
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

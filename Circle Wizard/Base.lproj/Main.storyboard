@@ -25,6 +25,9 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Circles" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="108" y="284" width="159" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,6 +45,9 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Pointless Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="123" y="334" width="129" height="17"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,38 +86,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="tap to spawn circles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-hl-ZTi">
-                                <rect key="frame" x="21" y="23" width="183" height="18"/>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="STARE AT THE CIRCLE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-hl-ZTi">
+                                <rect key="frame" x="21" y="23" width="198" height="18"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-pB-2YN">
-                                <rect key="frame" x="281" y="26" width="78" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-cj-LYl">
+                                <rect key="frame" x="281" y="23" width="78" height="30"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                 <state key="normal" title="GO BACK">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="GoBackButtonPressed:" destination="qRF-UO-aSY" eventType="touchUpInside" id="i0M-zx-aR2"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="5zd-Qg-5Fi"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="Xc3-0z-P6G"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="afe-cA-5Qw">
+                                <rect key="frame" x="21" y="181" width="338" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="cBW-pB-2YN" firstAttribute="leading" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="77" id="ArP-9i-BOx"/>
-                            <constraint firstItem="cBW-pB-2YN" firstAttribute="trailing" secondItem="1ZN-5I-lR1" secondAttribute="trailingMargin" id="RrS-rX-ED4"/>
+                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="trailing" secondItem="1ZN-5I-lR1" secondAttribute="trailingMargin" id="7kd-ZN-tku"/>
+                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="Z3d-cj-LYl" secondAttribute="bottom" constant="565" id="MY9-vL-tT0"/>
+                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="3" id="Ml1-Qu-szl"/>
                             <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="1dN-hl-ZTi" secondAttribute="bottom" constant="624" id="Rvg-99-EzG"/>
-                            <constraint firstItem="cBW-pB-2YN" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="6" id="eRn-Hc-wv2"/>
-                            <constraint firstItem="iRj-Xh-k2k" firstAttribute="top" secondItem="cBW-pB-2YN" secondAttribute="bottom" constant="626" id="fTI-pp-Wyi"/>
-                            <constraint firstItem="cBW-pB-2YN" firstAttribute="leading" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="77" id="lof-e2-rn3"/>
+                            <constraint firstItem="Z3d-cj-LYl" firstAttribute="leading" secondItem="1dN-hl-ZTi" secondAttribute="trailing" constant="77" id="X3s-H0-mj8"/>
                             <constraint firstItem="1dN-hl-ZTi" firstAttribute="leading" secondItem="1ZN-5I-lR1" secondAttribute="leadingMargin" constant="5" id="psy-DN-Qg9"/>
                             <constraint firstItem="1dN-hl-ZTi" firstAttribute="top" secondItem="pJE-eU-fPR" secondAttribute="bottom" constant="3" id="vdE-e3-Czy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="GoBackButtonPressed" destination="Z3d-cj-LYl" id="EST-Jl-eB4"/>
                         <outlet property="TextField" destination="1dN-hl-ZTi" id="zp8-SP-Phj"/>
                     </connections>
                 </viewController>
@@ -134,12 +146,18 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Circles: Story Mode" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="30" y="283" width="315" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Pointless Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
                                 <rect key="frame" x="124" y="325" width="126" height="17"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,15 +206,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWu-9d-Z3b">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWu-9d-Z3b">
                                 <rect key="frame" x="26" y="186" width="323" height="181"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <string key="text">Welcome to the most pointless story you will ever read. The story shall be as long as I can make it within the two days I had to work on this project, if you find the story boring, you can click the 'return' button to go back to the Intro Menu, where you can switch to Circles Mode. There should be no further questions, as the most pointless story shall begin in a moment.</string>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" text="The Author's Beginning Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dui-bB-tQa">
                                 <rect key="frame" x="82" y="158" width="211" height="20"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -207,6 +231,17 @@
                                 <state key="normal" title="RETURN"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="ohc-m9-l6N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rt-qp-WKR">
+                                <rect key="frame" x="263" y="417" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xiU-LN-hB5" kind="show" id="Oeg-yh-pSj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -239,6 +274,84 @@
             <point key="canvasLocation" x="1591" y="359"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="dfQ-eX-NSF">
+            <objects>
+                <viewController id="xiU-LN-hB5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vws-Rn-Mnw"/>
+                        <viewControllerLayoutGuide type="bottom" id="qko-eZ-dcw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BBu-ZG-1iH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vbj-xu-aGd">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jv-Px-uqi">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="UaI-FQ-sTW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ1-de-1ag">
+                                <rect key="frame" x="16" y="191" width="343" height="262"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Hello. Nice to meet you, I am the Author and Creator of your story and this app. I have now absorbed you into this fictional realm.
+
+Thank you for not hitting ‘return’ on the first slide, I really appreciate it. 
+
+Now, we shall officially begin the pointless story, which means I have to tell you that your name isn’t actually your real, true, pure name in this game world. 
+
+I will tell you what your real name is, if you promise to not spam continue and skip over all of the story.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHv-nd-BYM">
+                                <rect key="frame" x="267" y="461" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vu2-15-9Oz" kind="show" id="j3L-MQ-r5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Jv-Px-uqi" firstAttribute="leading" secondItem="BBu-ZG-1iH" secondAttribute="leadingMargin" constant="271" id="00p-vS-LaE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vbj-xu-aGd" secondAttribute="trailing" constant="241" id="3SR-w9-4HR"/>
+                            <constraint firstItem="aHv-nd-BYM" firstAttribute="trailing" secondItem="BBu-ZG-1iH" secondAttribute="trailingMargin" id="DTC-fo-eyk"/>
+                            <constraint firstItem="0Jv-Px-uqi" firstAttribute="trailing" secondItem="BBu-ZG-1iH" secondAttribute="trailingMargin" id="JLy-em-Ejs"/>
+                            <constraint firstItem="0Jv-Px-uqi" firstAttribute="top" secondItem="aHv-nd-BYM" secondAttribute="bottom" constant="89" id="Sne-am-XaI"/>
+                            <constraint firstItem="aHv-nd-BYM" firstAttribute="top" secondItem="jZ1-de-1ag" secondAttribute="bottom" constant="8" id="XlQ-lZ-osd"/>
+                            <constraint firstItem="Vbj-xu-aGd" firstAttribute="top" secondItem="vws-Rn-Mnw" secondAttribute="bottom" constant="45" id="epo-ue-VdS"/>
+                            <constraint firstItem="aHv-nd-BYM" firstAttribute="leading" secondItem="BBu-ZG-1iH" secondAttribute="leadingMargin" constant="251" id="hHi-OU-Rta"/>
+                            <constraint firstItem="0Jv-Px-uqi" firstAttribute="top" secondItem="aHv-nd-BYM" secondAttribute="bottom" constant="89" id="hfG-aZ-JeW"/>
+                            <constraint firstItem="Vbj-xu-aGd" firstAttribute="leading" secondItem="BBu-ZG-1iH" secondAttribute="leadingMargin" id="hzE-zn-teW"/>
+                            <constraint firstItem="jZ1-de-1ag" firstAttribute="leading" secondItem="BBu-ZG-1iH" secondAttribute="leadingMargin" id="igx-VQ-ofG"/>
+                            <constraint firstItem="jZ1-de-1ag" firstAttribute="top" secondItem="Vbj-xu-aGd" secondAttribute="bottom" constant="92" id="j9N-AY-eg1"/>
+                            <constraint firstItem="jZ1-de-1ag" firstAttribute="top" secondItem="Vbj-xu-aGd" secondAttribute="bottom" constant="92" id="lky-Jm-9od"/>
+                            <constraint firstItem="qko-eZ-dcw" firstAttribute="top" secondItem="0Jv-Px-uqi" secondAttribute="bottom" constant="8" id="n5D-LG-ftA"/>
+                            <constraint firstItem="jZ1-de-1ag" firstAttribute="trailing" secondItem="BBu-ZG-1iH" secondAttribute="trailingMargin" id="n5W-gs-A3Z"/>
+                            <constraint firstItem="aHv-nd-BYM" firstAttribute="top" secondItem="jZ1-de-1ag" secondAttribute="bottom" constant="8" id="w4O-Xw-gUQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arU-Rb-Th6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2304.8000000000002" y="358.4707646176912"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="xEe-Y9-J2e">
             <objects>
                 <viewController id="jtv-LQ-OEc" sceneMemberID="viewController">
@@ -265,6 +378,17 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="NEq-Ek-Dd3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DA-pz-eHY">
+                                <rect key="frame" x="196" y="612" width="163" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                <state key="normal" title="DISCLAIMER">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="azR-WG-kAE" kind="show" id="knp-Xf-w6I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -278,6 +402,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RaA-mg-kYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-733.60000000000002" y="-0.44977511244377816"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VKn-ca-vTX">
+            <objects>
+                <viewController id="azR-WG-kAE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="loU-wb-xL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="9zM-DZ-hNn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ydf-7l-XLL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS APP IS COMPLETE TRASH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8B-33-DYD">
+                                <rect key="frame" x="65" y="271" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwA-cr-Ymf">
+                                <rect key="frame" x="145" y="318" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CLICK HERE"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="cOo-yi-6E8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="y8B-33-DYD" secondAttribute="trailing" constant="49" id="Ncd-2A-9hW"/>
+                            <constraint firstItem="y8B-33-DYD" firstAttribute="leading" secondItem="Ydf-7l-XLL" secondAttribute="leadingMargin" constant="49" id="Pq5-lg-XUD"/>
+                            <constraint firstItem="9zM-DZ-hNn" firstAttribute="top" secondItem="y8B-33-DYD" secondAttribute="bottom" constant="375" id="jbR-ho-ZDA"/>
+                            <constraint firstItem="y8B-33-DYD" firstAttribute="top" secondItem="loU-wb-xL8" secondAttribute="bottom" constant="251" id="r9w-Va-EsE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfD-VB-AE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399" y="695"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -296,15 +460,1318 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-12" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lrx-YB-gDF">
+            <objects>
+                <viewController id="vu2-15-9Oz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ycj-fp-E7B"/>
+                        <viewControllerLayoutGuide type="bottom" id="OBl-AV-dt1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LiR-00-wKw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrV-13-7N1">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-0k-2xh">
+                                <rect key="frame" x="16" y="117" width="343" height="382.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">It is Ronn (Which according to Google Translate means ‘Round’ in Luxembourgish) Krees (Which according to Google Translate means ‘Circle’ in Luxembourgish). Yes, your real name is Ronn Krees, (which probably translates to Round Circle). 
+
+You are not some anti-socialite who is staring at your phone, but actually the Circle Wizard of the Circle Clan, and one of the co-leaders of the Circle Clan’s Round Cult, and the Circle Wizard of the Round Table, which is lead by the leader of the Circle Tribe.
+
+As the powerful Circle Wizard, no one actually knows your identity as the wizard except for your parents, and, of course, the former Circle Wizard, but they are now dead, due to unfortunate reasons. All of your friends know you as Ronn Krees, the person with the worst grades in the school, since 50% of protagonists in stories do bad at school, the other 50% are super-geniuses, it’s just how it is.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-ce-Ion">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="bFj-9A-txj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-KU-Dbh">
+                                <rect key="frame" x="252" y="487" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="axW-Wf-qqG" kind="show" id="Csd-69-Yb9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BKC-ce-Ion" firstAttribute="trailing" secondItem="LiR-00-wKw" secondAttribute="trailingMargin" id="0s7-V2-Jg2"/>
+                            <constraint firstItem="BKC-ce-Ion" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" constant="271" id="DjT-HF-GGz"/>
+                            <constraint firstItem="OBl-AV-dt1" firstAttribute="top" secondItem="BKC-ce-Ion" secondAttribute="bottom" constant="8" id="R2r-ZZ-JZW"/>
+                            <constraint firstItem="jrV-13-7N1" firstAttribute="top" secondItem="Ycj-fp-E7B" secondAttribute="bottom" constant="45" id="Rfm-yN-OM6"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="top" secondItem="jrV-13-7N1" secondAttribute="bottom" constant="14" id="RgI-Ku-J9K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eGN-KU-Dbh" secondAttribute="trailing" constant="15" id="SOG-8F-M76"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jrV-13-7N1" secondAttribute="trailing" constant="241" id="TQY-iF-cdU"/>
+                            <constraint firstItem="eGN-KU-Dbh" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" constant="236" id="VhI-vD-cTT"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" id="WFV-6t-YkD"/>
+                            <constraint firstItem="jrV-13-7N1" firstAttribute="leading" secondItem="LiR-00-wKw" secondAttribute="leadingMargin" id="WMb-7s-VDT"/>
+                            <constraint firstItem="BKC-ce-Ion" firstAttribute="top" secondItem="JN9-0k-2xh" secondAttribute="bottom" constant="80.5" id="Wht-6j-pPc"/>
+                            <constraint firstItem="eGN-KU-Dbh" firstAttribute="top" secondItem="Ycj-fp-E7B" secondAttribute="bottom" constant="467" id="awc-fH-tQh"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="trailing" secondItem="LiR-00-wKw" secondAttribute="trailingMargin" id="o6g-d2-Ait"/>
+                            <constraint firstItem="JN9-0k-2xh" firstAttribute="top" secondItem="jrV-13-7N1" secondAttribute="bottom" constant="18" id="pvq-Kj-ubu"/>
+                            <constraint firstItem="BKC-ce-Ion" firstAttribute="top" secondItem="eGN-KU-Dbh" secondAttribute="bottom" constant="63" id="qlk-nJ-5N8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nak-SI-5PW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3039" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uz7-6y-XgX">
+            <objects>
+                <viewController id="axW-Wf-qqG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g9f-Cf-wzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xsx-XC-Hmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mLG-JV-bZb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbU-Oe-ASc">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABn-oI-f2G">
+                                <rect key="frame" x="16" y="159" width="343" height="308.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The Circle Clan is a large clan located in a secret base at precisely at 0 longitude, 0 latitude on the planet Earth, the Evolved Earth. This Evolved Earth has powers and development (and a lot of human testing, which is quite sad, but since you received your circular powers from that kind of testing done on someone in your family a few generations back, I guess it’s ok? It really depends on your perspective, it really does). 
+
+The world is divided into clans, some of the most powerful being the groups labeled as the Shape Clans. Some of the not as powerful groups include the Food Clans, the Arts Clans, and the Technological Clans. (The Tech. Clans are the weakest (power wise) but are very skilled with technology, so they are not to be under estimated). 
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dy-0A-kBe">
+                                <rect key="frame" x="248" y="423" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MA7-xj-VGE" kind="show" id="X2y-61-NJu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saq-Th-6uP">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="xdy-Jb-7IM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9dy-0A-kBe" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" constant="232" id="0RC-Uj-YxE"/>
+                            <constraint firstItem="ABn-oI-f2G" firstAttribute="top" secondItem="fbU-Oe-ASc" secondAttribute="bottom" constant="56" id="3PK-cX-zB2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fbU-Oe-ASc" secondAttribute="trailing" constant="241" id="3r9-Sl-DbD"/>
+                            <constraint firstItem="fbU-Oe-ASc" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" id="4W6-cD-3Li"/>
+                            <constraint firstItem="saq-Th-6uP" firstAttribute="top" secondItem="9dy-0A-kBe" secondAttribute="bottom" constant="127" id="Hth-Ua-8HU"/>
+                            <constraint firstItem="fbU-Oe-ASc" firstAttribute="top" secondItem="g9f-Cf-wzH" secondAttribute="bottom" constant="45" id="KEA-U2-e9h"/>
+                            <constraint firstItem="ABn-oI-f2G" firstAttribute="top" secondItem="fbU-Oe-ASc" secondAttribute="bottom" constant="60" id="MRK-JP-57H"/>
+                            <constraint firstItem="saq-Th-6uP" firstAttribute="top" secondItem="ABn-oI-f2G" secondAttribute="bottom" constant="112.5" id="RAC-ak-q8R"/>
+                            <constraint firstItem="ABn-oI-f2G" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" id="WWR-Vy-qi9"/>
+                            <constraint firstItem="Xsx-XC-Hmm" firstAttribute="top" secondItem="saq-Th-6uP" secondAttribute="bottom" constant="8" id="hPn-R2-EXw"/>
+                            <constraint firstItem="saq-Th-6uP" firstAttribute="top" secondItem="ABn-oI-f2G" secondAttribute="bottom" constant="112.5" id="kCN-A8-57i"/>
+                            <constraint firstItem="9dy-0A-kBe" firstAttribute="top" secondItem="g9f-Cf-wzH" secondAttribute="bottom" constant="403" id="nFX-3O-FUg"/>
+                            <constraint firstItem="saq-Th-6uP" firstAttribute="leading" secondItem="mLG-JV-bZb" secondAttribute="leadingMargin" constant="271" id="q9X-8t-O3e"/>
+                            <constraint firstItem="saq-Th-6uP" firstAttribute="trailing" secondItem="mLG-JV-bZb" secondAttribute="trailingMargin" id="sKg-GE-XJl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9dy-0A-kBe" secondAttribute="trailing" constant="15" id="soZ-NR-0Sf"/>
+                            <constraint firstItem="ABn-oI-f2G" firstAttribute="trailing" secondItem="mLG-JV-bZb" secondAttribute="trailingMargin" id="t1R-3f-GEe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tzr-mv-YbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3769" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k5A-KN-f1b">
+            <objects>
+                <viewController id="MA7-xj-VGE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXN-2O-900"/>
+                        <viewControllerLayoutGuide type="bottom" id="T0A-JU-b64"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yw8-HN-dTn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPx-cL-yqs">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-pH-tcz">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="5vg-y4-bQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu1-4N-LzH">
+                                <rect key="frame" x="267" y="450" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LEx-Dr-Y9k" kind="show" id="Bn5-vx-2Lp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H09-nf-IMe">
+                                <rect key="frame" x="16" y="125" width="343" height="329"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This of course is a time with powerful clans, so in order for some story to start, I must let you know this is a stage of ‘Neutral Times’ which is a two year period in the middle of wars. Clans want to be dominant, but not just with military force, but with culture as well. During these calmer times, leaders of clans fund for cultural advancements and traditions. Luckily since you became the Circle Wizard during a time of peace; (two years ago at the start of the current Neutral Time) you haven’t had to fight. Of course, soon, this time will end and your life will be fairly chaotic. 
+
+I apologize I didn’t make the Neutral Times longer, since I do have 99% control over this story.
+
+There will be options where you can pick things to say, so that’s where the 1% of control I don’t have goes, into your decisions, of course I will then have to write that out as well.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yPx-cL-yqs" firstAttribute="leading" secondItem="yw8-HN-dTn" secondAttribute="leadingMargin" id="3J9-YB-ykr"/>
+                            <constraint firstItem="H09-nf-IMe" firstAttribute="leading" secondItem="yw8-HN-dTn" secondAttribute="leadingMargin" id="4ic-pq-Eaz"/>
+                            <constraint firstItem="VMk-pH-tcz" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="5UN-7a-MkR"/>
+                            <constraint firstItem="Eu1-4N-LzH" firstAttribute="leading" secondItem="yw8-HN-dTn" secondAttribute="leadingMargin" constant="251" id="5iw-Sj-GBT"/>
+                            <constraint firstItem="H09-nf-IMe" firstAttribute="top" secondItem="yPx-cL-yqs" secondAttribute="bottom" constant="26" id="5o3-km-HEy"/>
+                            <constraint firstItem="yPx-cL-yqs" firstAttribute="top" secondItem="sXN-2O-900" secondAttribute="bottom" constant="45" id="6Ym-dc-2tg"/>
+                            <constraint firstItem="H09-nf-IMe" firstAttribute="top" secondItem="yPx-cL-yqs" secondAttribute="bottom" constant="22" id="Buv-t6-1Q9"/>
+                            <constraint firstItem="Eu1-4N-LzH" firstAttribute="top" secondItem="H09-nf-IMe" secondAttribute="bottom" id="G5W-nj-Uia"/>
+                            <constraint firstItem="Eu1-4N-LzH" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="IQF-xg-Gux"/>
+                            <constraint firstItem="VMk-pH-tcz" firstAttribute="leading" secondItem="yw8-HN-dTn" secondAttribute="leadingMargin" constant="271" id="KUD-pd-9q8"/>
+                            <constraint firstItem="H09-nf-IMe" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="SpE-q6-1u7"/>
+                            <constraint firstItem="T0A-JU-b64" firstAttribute="top" secondItem="VMk-pH-tcz" secondAttribute="bottom" constant="8" id="c6C-Nu-zgd"/>
+                            <constraint firstItem="VMk-pH-tcz" firstAttribute="top" secondItem="H09-nf-IMe" secondAttribute="bottom" constant="130" id="eLz-zY-ddU"/>
+                            <constraint firstItem="Eu1-4N-LzH" firstAttribute="trailing" secondItem="yw8-HN-dTn" secondAttribute="trailingMargin" id="fUv-bO-SmX"/>
+                            <constraint firstItem="VMk-pH-tcz" firstAttribute="top" secondItem="Eu1-4N-LzH" secondAttribute="bottom" constant="100" id="uA1-VG-bt2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yPx-cL-yqs" secondAttribute="trailing" constant="241" id="wIu-Af-9ks"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkx-Td-yBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4480.8000000000002" y="358.4707646176912"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uKh-Z6-ivM">
+            <objects>
+                <viewController id="LEx-Dr-Y9k" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0mH-7t-DQt"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJC-DA-M1W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qnZ-j5-Aor">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ToD-XG-HW0">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-S2-ESa">
+                                <rect key="frame" x="16" y="188" width="343" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This is a lot of typing, which I am doing on Google Docs to transfer into the app, and this is currently 585 words, counting my notes on when to switch slides. I can also assure that I will avoid constant interruptions dearest Ronn Krees, so you can learn more about your past and be prepared for the future.
+
+May I remind you this is still the prologue? 
+
+You’re almost ready to enter Chapter 1: [title removed for spoiler reasons]
+
+There are just a few more things to learn before you begin, so stick tight or else I will remove the Return button on this slide and the next 10,000.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rw-Z3-dl2">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="GC2-l4-XC1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njC-gC-wK6">
+                                <rect key="frame" x="248" y="469" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iHv-ou-Fpk" kind="show" id="Yzt-r6-boS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F0P-S2-ESa" firstAttribute="trailing" secondItem="qnZ-j5-Aor" secondAttribute="trailingMargin" id="0fA-i8-p5s"/>
+                            <constraint firstItem="F0P-S2-ESa" firstAttribute="top" secondItem="ToD-XG-HW0" secondAttribute="bottom" constant="86" id="0xQ-BR-Gpc"/>
+                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="top" secondItem="F0P-S2-ESa" secondAttribute="bottom" constant="105" id="2Rf-hQ-BUC"/>
+                            <constraint firstItem="ToD-XG-HW0" firstAttribute="top" secondItem="0mH-7t-DQt" secondAttribute="bottom" constant="45" id="3AL-RW-vJj"/>
+                            <constraint firstItem="ToD-XG-HW0" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" id="7q6-I0-Jck"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ToD-XG-HW0" secondAttribute="trailing" constant="241" id="9Hd-EX-e9N"/>
+                            <constraint firstItem="bJC-DA-M1W" firstAttribute="top" secondItem="4rw-Z3-dl2" secondAttribute="bottom" constant="8" id="JNP-OV-RDz"/>
+                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="top" secondItem="njC-gC-wK6" secondAttribute="bottom" constant="81" id="KKw-le-NDt"/>
+                            <constraint firstItem="njC-gC-wK6" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" constant="232" id="MNw-B3-VRm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="njC-gC-wK6" secondAttribute="trailing" constant="19" id="R7s-9u-by6"/>
+                            <constraint firstItem="njC-gC-wK6" firstAttribute="top" secondItem="0mH-7t-DQt" secondAttribute="bottom" constant="449" id="VPT-09-Fa4"/>
+                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="trailing" secondItem="qnZ-j5-Aor" secondAttribute="trailingMargin" id="WFK-E6-cvY"/>
+                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="top" secondItem="F0P-S2-ESa" secondAttribute="bottom" constant="105" id="cZj-j2-0N0"/>
+                            <constraint firstItem="F0P-S2-ESa" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" id="dBf-ls-mpF"/>
+                            <constraint firstItem="F0P-S2-ESa" firstAttribute="top" secondItem="ToD-XG-HW0" secondAttribute="bottom" constant="86" id="gSp-ym-gaj"/>
+                            <constraint firstItem="4rw-Z3-dl2" firstAttribute="leading" secondItem="qnZ-j5-Aor" secondAttribute="leadingMargin" constant="271" id="lri-i7-aTh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hu6-JR-hBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5177" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fze-Ev-51X">
+            <objects>
+                <viewController id="iHv-ou-Fpk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gAr-1s-KlQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="e9a-Ol-83C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zv9-EG-Jbt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1rN-ia-YIT">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXn-bH-tP3">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="eB7-eU-RNq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-Jk-rfI">
+                                <rect key="frame" x="16" y="137" width="343" height="345.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">
+Ahem.
+Continuing, you are a part of the Circle Clan, which is one of the two best Shape Clans, the other one is your rival, the Square Clan. Of course there is also something called the Shape Council, where all of the Wizards for the clans, and the leaders of the clans go every other month to debate issues. Nothing much is decided, other than the fact that the Blueberry and Pomegranate Clans are like irritating children. You’ve sat in on about 11, since your 12th one is coming up to announce the start of the War Period.
+
+You’ve met some interesting Clan Wizards, none of which you could identify if you met them out of uniform, considering they all wear drapey robes in their colors, and a hood and mask to conceal their identity as a wizard. In case you are wondering, the colors of the Circle Clan are dark blue, gold and rose.
+</mutableString>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFI-xM-AzY">
+                                <rect key="frame" x="267" y="490" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ljf-K7-gCf" kind="show" id="Jaz-9e-8tv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uFI-xM-AzY" firstAttribute="top" secondItem="8GL-Jk-rfI" secondAttribute="bottom" constant="7.5" id="3zo-r6-cQe"/>
+                            <constraint firstItem="uFI-xM-AzY" firstAttribute="trailing" secondItem="Zv9-EG-Jbt" secondAttribute="trailingMargin" id="CMu-M2-Yec"/>
+                            <constraint firstItem="1rN-ia-YIT" firstAttribute="top" secondItem="gAr-1s-KlQ" secondAttribute="bottom" constant="45" id="CNg-vp-dRD"/>
+                            <constraint firstItem="cXn-bH-tP3" firstAttribute="top" secondItem="uFI-xM-AzY" secondAttribute="bottom" constant="60" id="Ohb-n7-fwo"/>
+                            <constraint firstItem="8GL-Jk-rfI" firstAttribute="trailing" secondItem="Zv9-EG-Jbt" secondAttribute="trailingMargin" id="VIC-6A-Oio"/>
+                            <constraint firstItem="e9a-Ol-83C" firstAttribute="top" secondItem="cXn-bH-tP3" secondAttribute="bottom" constant="8" id="XSI-Tc-c4j"/>
+                            <constraint firstItem="8GL-Jk-rfI" firstAttribute="top" secondItem="1rN-ia-YIT" secondAttribute="bottom" constant="34" id="b9z-2m-qUJ"/>
+                            <constraint firstItem="8GL-Jk-rfI" firstAttribute="leading" secondItem="Zv9-EG-Jbt" secondAttribute="leadingMargin" id="ec9-af-XQl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1rN-ia-YIT" secondAttribute="trailing" constant="241" id="el9-1r-wht"/>
+                            <constraint firstItem="8GL-Jk-rfI" firstAttribute="top" secondItem="1rN-ia-YIT" secondAttribute="bottom" constant="38" id="fS1-jj-DiE"/>
+                            <constraint firstItem="cXn-bH-tP3" firstAttribute="trailing" secondItem="Zv9-EG-Jbt" secondAttribute="trailingMargin" id="fs6-nR-IbF"/>
+                            <constraint firstItem="uFI-xM-AzY" firstAttribute="leading" secondItem="Zv9-EG-Jbt" secondAttribute="leadingMargin" constant="251" id="hZc-OE-opF"/>
+                            <constraint firstItem="1rN-ia-YIT" firstAttribute="leading" secondItem="Zv9-EG-Jbt" secondAttribute="leadingMargin" id="lAa-TE-5qf"/>
+                            <constraint firstItem="cXn-bH-tP3" firstAttribute="top" secondItem="8GL-Jk-rfI" secondAttribute="bottom" constant="97.5" id="qWd-Mo-wRz"/>
+                            <constraint firstItem="cXn-bH-tP3" firstAttribute="leading" secondItem="Zv9-EG-Jbt" secondAttribute="leadingMargin" constant="271" id="rgO-CP-YPS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQt-Gs-zQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5892" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rh9-S1-ARx">
+            <objects>
+                <viewController id="Ljf-K7-gCf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AlR-cP-cjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="0sb-Dy-C5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UbZ-PM-FEu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYf-RI-2Zf">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sP-5U-8kL">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="QZH-zg-aQ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-XS-7qQ">
+                                <rect key="frame" x="263" y="474" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fVg-ao-UTN" kind="show" id="04C-1C-8Dm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Am-5K-XQ8">
+                                <rect key="frame" x="16" y="149" width="343" height="316.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You remember earlier how I mentioned things like the Round Table and The Circle Cult?
+
+Great! Now I shall explain them.
+
+The Round Table is a group lead by the leaders of the Circle Clan, and consists of the Circle Wizard, the First and Second Advisors to the Leaders, the Strongest Beings of the Circle Clan, the Most Intelligent of the Circle Clan and the Pageboy or Pagegirl, who are basically servants there for decoration. 
+
+The Circle Cult is a bunch of people who follow the ‘Way of the Round’ you only lead it because your parents lead it before you and one chosen successor from an anonymous third party. The leaders of the clan don’t like the Circle Cult, since the ‘Way of the Round’ appears to “destroy” more than “unite”.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hgn-XS-7qQ" firstAttribute="top" secondItem="0Am-5K-XQ8" secondAttribute="bottom" constant="8.5" id="1vd-Is-Tnb"/>
+                            <constraint firstItem="hgn-XS-7qQ" firstAttribute="leading" secondItem="UbZ-PM-FEu" secondAttribute="leadingMargin" constant="247" id="3tC-JK-e1N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RYf-RI-2Zf" secondAttribute="trailing" constant="241" id="4Uf-TG-h2i"/>
+                            <constraint firstItem="hgn-XS-7qQ" firstAttribute="top" secondItem="0Am-5K-XQ8" secondAttribute="bottom" constant="8.5" id="7yP-ES-CSF"/>
+                            <constraint firstItem="7sP-5U-8kL" firstAttribute="top" secondItem="hgn-XS-7qQ" secondAttribute="bottom" constant="76" id="AAX-VG-MT1"/>
+                            <constraint firstItem="hgn-XS-7qQ" firstAttribute="trailing" secondItem="UbZ-PM-FEu" secondAttribute="trailingMargin" id="Emh-mZ-TVU"/>
+                            <constraint firstItem="RYf-RI-2Zf" firstAttribute="top" secondItem="AlR-cP-cjI" secondAttribute="bottom" constant="45" id="Ill-Zn-iU7"/>
+                            <constraint firstItem="0sb-Dy-C5o" firstAttribute="top" secondItem="7sP-5U-8kL" secondAttribute="bottom" constant="8" id="LBf-uN-qgS"/>
+                            <constraint firstItem="hgn-XS-7qQ" firstAttribute="trailing" secondItem="UbZ-PM-FEu" secondAttribute="trailingMargin" id="TbU-bs-UMl"/>
+                            <constraint firstItem="0Am-5K-XQ8" firstAttribute="trailing" secondItem="UbZ-PM-FEu" secondAttribute="trailingMargin" id="Xhp-w7-2wj"/>
+                            <constraint firstItem="0Am-5K-XQ8" firstAttribute="top" secondItem="RYf-RI-2Zf" secondAttribute="bottom" constant="50" id="Zp3-4l-w6I"/>
+                            <constraint firstItem="0Am-5K-XQ8" firstAttribute="leading" secondItem="UbZ-PM-FEu" secondAttribute="leadingMargin" id="b5K-D8-aVi"/>
+                            <constraint firstItem="7sP-5U-8kL" firstAttribute="leading" secondItem="UbZ-PM-FEu" secondAttribute="leadingMargin" constant="271" id="d8e-wE-syl"/>
+                            <constraint firstItem="0Am-5K-XQ8" firstAttribute="trailing" secondItem="UbZ-PM-FEu" secondAttribute="trailingMargin" id="eDA-nh-Bvo"/>
+                            <constraint firstItem="0Am-5K-XQ8" firstAttribute="leading" secondItem="UbZ-PM-FEu" secondAttribute="leadingMargin" id="eNv-9p-r60"/>
+                            <constraint firstItem="7sP-5U-8kL" firstAttribute="trailing" secondItem="UbZ-PM-FEu" secondAttribute="trailingMargin" id="g63-YT-Xo0"/>
+                            <constraint firstItem="RYf-RI-2Zf" firstAttribute="leading" secondItem="UbZ-PM-FEu" secondAttribute="leadingMargin" id="gJa-8S-tAs"/>
+                            <constraint firstItem="hgn-XS-7qQ" firstAttribute="leading" secondItem="UbZ-PM-FEu" secondAttribute="leadingMargin" constant="247" id="ndO-Yp-ljc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3I-le-gZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6600.8000000000002" y="357.57121439280365"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2WW-Gz-paa">
+            <objects>
+                <viewController id="fVg-ao-UTN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Dv-sQ-NZY"/>
+                        <viewControllerLayoutGuide type="bottom" id="16C-DJ-dYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c6g-Pq-Qcd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LaX-70-kuJ">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoN-7Z-cLC">
+                                <rect key="frame" x="16" y="107" width="343" height="456.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Also, everyone in the Circle Cult wears clothing when they meet that conceals their identity, so no one really knows the other members, also, voice modification is a necessity on the veils, to protect the members in case the leaders of the Circle Clan stumble in on one of their secret meetings.
+
+Now for some daily life:
+You go to a school called Cercle School for the Average and the Skilled. As mentioned earlier, you have the worst grades in your class of 99 students. I do feel sorry for that, you just don’t have time to study between being the Circle Wizard and leading a Cult outside of school.
+
+You, like most protagonists, have two main good friends, Circulo and Volta. You can probably guess what their genders are, it’s really not that hard.
+
+One is a Satanist and could probably be in the Circle Cult, while the other has good grades, and has a high set of powers, but is terribly klutzy. Volta is the Satanist, just in case you were wondering. Anyone who actually wonders how you all became friends, it’s actually because you all were childhood friends who went to the same preschool. 
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xL-3g-Kg2">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="Yah-Td-G7J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WC-y8-YoX">
+                                <rect key="frame" x="263" y="528" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="93D-DG-H2w" kind="show" id="X0p-Pb-TK4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8xL-3g-Kg2" firstAttribute="trailing" secondItem="c6g-Pq-Qcd" secondAttribute="trailingMargin" id="1ab-f2-lHy"/>
+                            <constraint firstItem="XoN-7Z-cLC" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" id="44K-1K-FY4"/>
+                            <constraint firstItem="8xL-3g-Kg2" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" constant="271" id="5Fq-0I-s3h"/>
+                            <constraint firstItem="6WC-y8-YoX" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" constant="247" id="6nC-8a-mjx"/>
+                            <constraint firstItem="6WC-y8-YoX" firstAttribute="trailing" secondItem="c6g-Pq-Qcd" secondAttribute="trailingMargin" id="9K1-vz-TQy"/>
+                            <constraint firstItem="XoN-7Z-cLC" firstAttribute="trailing" secondItem="c6g-Pq-Qcd" secondAttribute="trailingMargin" id="Spp-4V-6I0"/>
+                            <constraint firstItem="LaX-70-kuJ" firstAttribute="top" secondItem="1Dv-sQ-NZY" secondAttribute="bottom" constant="45" id="a7Q-0n-hE3"/>
+                            <constraint firstItem="8xL-3g-Kg2" firstAttribute="top" secondItem="6WC-y8-YoX" secondAttribute="bottom" constant="22" id="bWF-QF-cEJ"/>
+                            <constraint firstItem="16C-DJ-dYH" firstAttribute="top" secondItem="8xL-3g-Kg2" secondAttribute="bottom" constant="8" id="emM-rE-fdq"/>
+                            <constraint firstItem="8xL-3g-Kg2" firstAttribute="top" secondItem="XoN-7Z-cLC" secondAttribute="bottom" constant="16.5" id="igG-hD-8qI"/>
+                            <constraint firstItem="8xL-3g-Kg2" firstAttribute="top" secondItem="XoN-7Z-cLC" secondAttribute="bottom" constant="16.5" id="kiD-Mq-maC"/>
+                            <constraint firstItem="XoN-7Z-cLC" firstAttribute="top" secondItem="LaX-70-kuJ" secondAttribute="bottom" constant="4" id="ojF-QZ-nWq"/>
+                            <constraint firstItem="6WC-y8-YoX" firstAttribute="top" secondItem="1Dv-sQ-NZY" secondAttribute="bottom" constant="508" id="tSx-TO-NSz"/>
+                            <constraint firstItem="XoN-7Z-cLC" firstAttribute="top" secondItem="LaX-70-kuJ" secondAttribute="bottom" constant="8" id="uPS-Ab-OHZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LaX-70-kuJ" secondAttribute="trailing" constant="241" id="wbK-sI-RZR"/>
+                            <constraint firstItem="LaX-70-kuJ" firstAttribute="leading" secondItem="c6g-Pq-Qcd" secondAttribute="leadingMargin" id="zSw-Yi-dq9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32Q-uq-TAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7278" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WSo-hX-SYt">
+            <objects>
+                <viewController id="93D-DG-H2w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bcZ-1S-PbZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XFH-Xw-CpO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T1T-Ke-LZx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="raS-UE-Mbp">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR7-p4-TDQ">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="2Cf-qN-pvA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNJ-Tv-HAq">
+                                <rect key="frame" x="100" y="360" width="175" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="GO LOOK FOR THEM">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IyB-6E-R35" kind="show" id="r0s-vC-Qc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irk-tP-8Rg">
+                                <rect key="frame" x="64" y="415" width="246" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE WITH THE STORY">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iZd-Yz-Xs4" kind="show" id="Vqz-zS-pXq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVD-pX-mLU">
+                                <rect key="frame" x="16" y="175" width="343" height="152.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You have almost learned everything there is to learn about your current situation, except for the real problem. There are two clans that no one genuinely knows about, the only reason why I know is because I’m the author, and now you will know because I’m about to tell you. The Angel Tribe and the Devil Tribe. They contain vast amounts of power and really act opposite their names, of course no one really knows that. Now you know. Anyway, they are located in secret desolate places, so don’t try to look for them.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BNJ-Tv-HAq" firstAttribute="top" secondItem="PVD-pX-mLU" secondAttribute="bottom" constant="32.5" id="3Hx-Wz-JhQ"/>
+                            <constraint firstItem="lR7-p4-TDQ" firstAttribute="top" secondItem="Irk-tP-8Rg" secondAttribute="bottom" constant="86" id="60F-fI-XJk"/>
+                            <constraint firstItem="lR7-p4-TDQ" firstAttribute="trailing" secondItem="T1T-Ke-LZx" secondAttribute="trailingMargin" id="8oA-xY-S15"/>
+                            <constraint firstItem="BNJ-Tv-HAq" firstAttribute="top" secondItem="PVD-pX-mLU" secondAttribute="bottom" constant="32.5" id="9TG-t6-kB7"/>
+                            <constraint firstItem="PVD-pX-mLU" firstAttribute="top" secondItem="raS-UE-Mbp" secondAttribute="bottom" constant="76" id="Cqi-id-J8G"/>
+                            <constraint firstItem="PVD-pX-mLU" firstAttribute="trailing" secondItem="T1T-Ke-LZx" secondAttribute="trailingMargin" id="Etx-OA-3VV"/>
+                            <constraint firstItem="Irk-tP-8Rg" firstAttribute="top" secondItem="BNJ-Tv-HAq" secondAttribute="bottom" constant="25" id="F3e-XG-jXH"/>
+                            <constraint firstItem="XFH-Xw-CpO" firstAttribute="top" secondItem="lR7-p4-TDQ" secondAttribute="bottom" constant="57" id="JDd-L1-bI1"/>
+                            <constraint firstItem="raS-UE-Mbp" firstAttribute="leading" secondItem="T1T-Ke-LZx" secondAttribute="leadingMargin" id="KIT-jV-ya1"/>
+                            <constraint firstItem="PVD-pX-mLU" firstAttribute="leading" secondItem="T1T-Ke-LZx" secondAttribute="leadingMargin" id="QZC-oY-CIB"/>
+                            <constraint firstItem="BNJ-Tv-HAq" firstAttribute="leading" secondItem="T1T-Ke-LZx" secondAttribute="leadingMargin" constant="84" id="R9B-6n-Bur"/>
+                            <constraint firstItem="Irk-tP-8Rg" firstAttribute="top" secondItem="BNJ-Tv-HAq" secondAttribute="bottom" constant="25" id="Yd7-bC-fT4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="raS-UE-Mbp" secondAttribute="trailing" constant="241" id="d66-oU-JrR"/>
+                            <constraint firstItem="PVD-pX-mLU" firstAttribute="top" secondItem="raS-UE-Mbp" secondAttribute="bottom" constant="76" id="nQn-r5-oxZ"/>
+                            <constraint firstItem="lR7-p4-TDQ" firstAttribute="leading" secondItem="T1T-Ke-LZx" secondAttribute="leadingMargin" constant="271" id="oZi-hj-GXG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Irk-tP-8Rg" secondAttribute="trailing" constant="49" id="prX-7V-e6f"/>
+                            <constraint firstItem="lR7-p4-TDQ" firstAttribute="top" secondItem="Irk-tP-8Rg" secondAttribute="bottom" constant="86" id="uH3-Va-jZN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BNJ-Tv-HAq" secondAttribute="trailing" constant="84" id="xi6-OY-Iuy"/>
+                            <constraint firstItem="Irk-tP-8Rg" firstAttribute="leading" secondItem="T1T-Ke-LZx" secondAttribute="leadingMargin" constant="48" id="zJO-wb-JH1"/>
+                            <constraint firstItem="raS-UE-Mbp" firstAttribute="top" secondItem="bcZ-1S-PbZ" secondAttribute="bottom" constant="45" id="zNI-Ft-3Ks"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cja-vl-Eax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7983" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xz8-0z-wsk">
+            <objects>
+                <viewController id="iZd-Yz-Xs4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dce-l7-NC1"/>
+                        <viewControllerLayoutGuide type="bottom" id="HUR-eZ-ucJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mn0-p6-wxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCp-c7-wCF">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1E-NG-dTc">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="Qun-Sm-Fmd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-L9-Vr2">
+                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZDL-GM-QaZ" kind="show" id="tcm-Zm-mPZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-lZ-Tjl">
+                                <rect key="frame" x="16" y="216" width="343" height="148"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Good, let’s continue.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LCp-c7-wCF" secondAttribute="trailing" constant="241" id="1vk-4k-I66"/>
+                            <constraint firstItem="HUR-eZ-ucJ" firstAttribute="top" secondItem="U1E-NG-dTc" secondAttribute="bottom" constant="57" id="5ok-7v-mHG"/>
+                            <constraint firstItem="mlR-lZ-Tjl" firstAttribute="top" secondItem="LCp-c7-wCF" secondAttribute="bottom" constant="113" id="8oZ-By-cIu"/>
+                            <constraint firstItem="mlR-lZ-Tjl" firstAttribute="leading" secondItem="Mn0-p6-wxJ" secondAttribute="leadingMargin" id="AJ2-Gp-oQv"/>
+                            <constraint firstItem="LCp-c7-wCF" firstAttribute="top" secondItem="dce-l7-NC1" secondAttribute="bottom" constant="45" id="F3X-Nu-DAO"/>
+                            <constraint firstItem="U1E-NG-dTc" firstAttribute="trailing" secondItem="Mn0-p6-wxJ" secondAttribute="trailingMargin" id="GQ1-D1-jUZ"/>
+                            <constraint firstItem="c2U-L9-Vr2" firstAttribute="leading" secondItem="Mn0-p6-wxJ" secondAttribute="leadingMargin" constant="247" id="JJ9-l3-2TI"/>
+                            <constraint firstItem="U1E-NG-dTc" firstAttribute="top" secondItem="c2U-L9-Vr2" secondAttribute="bottom" constant="129" id="N6T-Rj-OaL"/>
+                            <constraint firstItem="LCp-c7-wCF" firstAttribute="leading" secondItem="Mn0-p6-wxJ" secondAttribute="leadingMargin" id="Ofl-nk-iRu"/>
+                            <constraint firstItem="U1E-NG-dTc" firstAttribute="leading" secondItem="Mn0-p6-wxJ" secondAttribute="leadingMargin" constant="271" id="RV2-Bm-qjU"/>
+                            <constraint firstItem="mlR-lZ-Tjl" firstAttribute="trailing" secondItem="Mn0-p6-wxJ" secondAttribute="trailingMargin" id="bPH-zj-8Od"/>
+                            <constraint firstItem="U1E-NG-dTc" firstAttribute="top" secondItem="c2U-L9-Vr2" secondAttribute="bottom" constant="129" id="gTr-BK-eTh"/>
+                            <constraint firstItem="c2U-L9-Vr2" firstAttribute="top" secondItem="mlR-lZ-Tjl" secondAttribute="bottom" constant="8" id="jm1-BQ-U8h"/>
+                            <constraint firstItem="mlR-lZ-Tjl" firstAttribute="top" secondItem="LCp-c7-wCF" secondAttribute="bottom" constant="117" id="m7m-zo-kcS"/>
+                            <constraint firstItem="c2U-L9-Vr2" firstAttribute="trailing" secondItem="Mn0-p6-wxJ" secondAttribute="trailingMargin" id="sC8-ma-fMU"/>
+                            <constraint firstItem="c2U-L9-Vr2" firstAttribute="top" secondItem="mlR-lZ-Tjl" secondAttribute="bottom" constant="8" id="txh-2F-Zf8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jni-Wp-rRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8686" y="34"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G3H-wD-aiF">
+            <objects>
+                <viewController id="IyB-6E-R35" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2cI-8o-7t8"/>
+                        <viewControllerLayoutGuide type="bottom" id="opz-Pd-hyu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6To-dK-0bx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ywr-KU-hHU">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-tk-lVH">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="34I-uj-sZm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-YU-Sb3">
+                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZDL-GM-QaZ" kind="show" id="7FT-dZ-dhI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-rK-ctB">
+                                <rect key="frame" x="16" y="216" width="343" height="148"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">No, you can’t look for them, this is the prologue. *insert my sigh here* I can’t believe you.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vaw-rK-ctB" firstAttribute="top" secondItem="Ywr-KU-hHU" secondAttribute="bottom" constant="113" id="2Yd-fJ-MWa"/>
+                            <constraint firstItem="Ywr-KU-hHU" firstAttribute="top" secondItem="2cI-8o-7t8" secondAttribute="bottom" constant="45" id="2mo-RA-FFw"/>
+                            <constraint firstItem="aWJ-tk-lVH" firstAttribute="top" secondItem="JNv-YU-Sb3" secondAttribute="bottom" constant="129" id="DJK-7c-wwM"/>
+                            <constraint firstItem="JNv-YU-Sb3" firstAttribute="top" secondItem="Vaw-rK-ctB" secondAttribute="bottom" constant="8" id="DyM-WC-Tdx"/>
+                            <constraint firstItem="JNv-YU-Sb3" firstAttribute="top" secondItem="Vaw-rK-ctB" secondAttribute="bottom" constant="8" id="EjW-3o-ZYH"/>
+                            <constraint firstItem="opz-Pd-hyu" firstAttribute="top" secondItem="aWJ-tk-lVH" secondAttribute="bottom" constant="57" id="FFe-Xf-97t"/>
+                            <constraint firstItem="Vaw-rK-ctB" firstAttribute="top" secondItem="Ywr-KU-hHU" secondAttribute="bottom" constant="117" id="HlP-Mh-eni"/>
+                            <constraint firstItem="Vaw-rK-ctB" firstAttribute="leading" secondItem="6To-dK-0bx" secondAttribute="leadingMargin" id="PIw-gL-VuB"/>
+                            <constraint firstItem="aWJ-tk-lVH" firstAttribute="top" secondItem="JNv-YU-Sb3" secondAttribute="bottom" constant="129" id="QlO-Ey-WAZ"/>
+                            <constraint firstItem="JNv-YU-Sb3" firstAttribute="trailing" secondItem="6To-dK-0bx" secondAttribute="trailingMargin" id="Twd-bA-58v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ywr-KU-hHU" secondAttribute="trailing" constant="241" id="Z0u-Qr-uwv"/>
+                            <constraint firstItem="JNv-YU-Sb3" firstAttribute="leading" secondItem="6To-dK-0bx" secondAttribute="leadingMargin" constant="247" id="aRA-p4-xX7"/>
+                            <constraint firstItem="Vaw-rK-ctB" firstAttribute="trailing" secondItem="6To-dK-0bx" secondAttribute="trailingMargin" id="dRK-T4-2HB"/>
+                            <constraint firstItem="Ywr-KU-hHU" firstAttribute="leading" secondItem="6To-dK-0bx" secondAttribute="leadingMargin" id="rHp-yZ-hBL"/>
+                            <constraint firstItem="aWJ-tk-lVH" firstAttribute="trailing" secondItem="6To-dK-0bx" secondAttribute="trailingMargin" id="sIw-cM-ctx"/>
+                            <constraint firstItem="aWJ-tk-lVH" firstAttribute="leading" secondItem="6To-dK-0bx" secondAttribute="leadingMargin" constant="271" id="va1-hW-iii"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbb-M8-TBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8686" y="695"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wdc-r2-gKH">
+            <objects>
+                <viewController id="ZDL-GM-QaZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ykz-kC-lQW"/>
+                        <viewControllerLayoutGuide type="bottom" id="TIg-A4-W5k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zjd-BT-eju">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qFe-tB-FXU">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fn-a6-EM7">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="Bde-c6-Jbu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-z7-x1I">
+                                <rect key="frame" x="16" y="158" width="343" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">So, the Angel and the Devil tribes are too powerful for their own good, and there is a possibility that they want to conquer the clans and that could easily lead to the downfall of the universe, which is horrible Ronn Krees, since you and I are in this universe. Well I am sort of in it, more like this is my universe that I helped bring to life and let you and your friends live within it.
+
+Of course I don’t want my creations, the Tribes, killing the universe I created. I just can’t have that happen, you know? It would be terrible, absolutely terrible, then my wonderful reputation would plummet. 
+
+Oof.
+
+It stings.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTE-Eb-LCv">
+                                <rect key="frame" x="253" y="431" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T7g-r4-gD9" kind="show" id="Gav-Ib-YIG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" id="02B-60-xpc"/>
+                            <constraint firstItem="FTE-Eb-LCv" firstAttribute="top" secondItem="nkq-z7-x1I" secondAttribute="bottom" constant="15" id="D90-jl-M54"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qFe-tB-FXU" secondAttribute="trailing" constant="241" id="FAI-WA-2X6"/>
+                            <constraint firstItem="qFe-tB-FXU" firstAttribute="top" secondItem="Ykz-kC-lQW" secondAttribute="bottom" constant="45" id="G6g-w6-wLw"/>
+                            <constraint firstItem="2Fn-a6-EM7" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" constant="271" id="KJz-iX-yXa"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="top" secondItem="qFe-tB-FXU" secondAttribute="bottom" constant="59" id="O5F-hH-Lcd"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="trailing" secondItem="Zjd-BT-eju" secondAttribute="trailingMargin" id="QUP-LI-Q3x"/>
+                            <constraint firstItem="qFe-tB-FXU" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" id="QwX-6v-SQC"/>
+                            <constraint firstItem="2Fn-a6-EM7" firstAttribute="trailing" secondItem="Zjd-BT-eju" secondAttribute="trailingMargin" id="TJ5-AU-SmX"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="trailing" secondItem="Zjd-BT-eju" secondAttribute="trailingMargin" id="ZVn-MZ-EH0"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="top" secondItem="qFe-tB-FXU" secondAttribute="bottom" constant="59" id="bq4-hr-yN6"/>
+                            <constraint firstItem="FTE-Eb-LCv" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" constant="237" id="c1i-U6-DJY"/>
+                            <constraint firstItem="2Fn-a6-EM7" firstAttribute="top" secondItem="FTE-Eb-LCv" secondAttribute="bottom" constant="70" id="fgr-b0-Rof"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="trailing" secondItem="Zjd-BT-eju" secondAttribute="trailingMargin" id="gEC-jA-28f"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="top" secondItem="qFe-tB-FXU" secondAttribute="bottom" constant="59" id="gIc-Ay-qyR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qFe-tB-FXU" secondAttribute="trailing" constant="241" id="gUg-3U-v4n"/>
+                            <constraint firstItem="2Fn-a6-EM7" firstAttribute="trailing" secondItem="Zjd-BT-eju" secondAttribute="trailingMargin" id="gWq-Vh-yf9"/>
+                            <constraint firstItem="qFe-tB-FXU" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" id="hKH-PY-4tR"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" id="iEp-YR-dZM"/>
+                            <constraint firstItem="nkq-z7-x1I" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" id="iOD-SZ-mtf"/>
+                            <constraint firstItem="FTE-Eb-LCv" firstAttribute="top" secondItem="nkq-z7-x1I" secondAttribute="bottom" constant="15" id="icP-9y-vK4"/>
+                            <constraint firstItem="2Fn-a6-EM7" firstAttribute="leading" secondItem="Zjd-BT-eju" secondAttribute="leadingMargin" constant="271" id="jVc-Xc-D7l"/>
+                            <constraint firstItem="2Fn-a6-EM7" firstAttribute="top" secondItem="FTE-Eb-LCv" secondAttribute="bottom" constant="70" id="jgx-Vb-YwY"/>
+                            <constraint firstItem="TIg-A4-W5k" firstAttribute="top" secondItem="2Fn-a6-EM7" secondAttribute="bottom" constant="57" id="lhv-Vj-W8B"/>
+                            <constraint firstItem="qFe-tB-FXU" firstAttribute="top" secondItem="Ykz-kC-lQW" secondAttribute="bottom" constant="45" id="njb-HQ-D5s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FTE-Eb-LCv" secondAttribute="trailing" constant="14" id="wiQ-PF-mrp"/>
+                            <constraint firstItem="TIg-A4-W5k" firstAttribute="top" secondItem="2Fn-a6-EM7" secondAttribute="bottom" constant="57" id="zev-Hh-Pr9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UK9-pC-Lyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9528.7999999999993" y="357.57121439280365"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BER-et-VIN">
+            <objects>
+                <viewController id="T7g-r4-gD9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EqC-Lp-P1Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="XQe-WS-qb0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g90-sM-oN6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ios-fd-9nN">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="q4F-K4-z6Q"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5G-P3-AvM">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d64-ox-FFw">
+                                <rect key="frame" x="16" y="116" width="343" height="410"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">So let me just review the checklist
+-Explain Who Ronn Krees is
+-Explain About the Tribes
+-Explain Their Roles, Circle Wizard, Circle Cult Leader
+-Explain School
+-Explain Angels and Devils
+-Circulo and Volta, (translations: circulo: circle in Galician, volta: round in Portuguese)
+-Not Yet Covered, What Happened to the Former Circle Wizard, to be Told Later By The Parents of Ronn Krees, Yika and Kreis, (translations, yika: round in Yoruba and kreis: circle in German) 
+
+Wait.
+Oh @#$!.
+You weren’t supposed to see that. Thats a personal check list. I will leave the last thing on the list for later. That can be a special side story if I release an update or something.
+
+It can be a branch off the main page, you know the one where I explain the Rules, the Authors Note page. I can add a Side story button, that will be fun.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hZ-WP-k9f">
+                                <rect key="frame" x="263" y="523" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S21-Ma-Chj" kind="show" id="IZq-Zq-O3b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ios-fd-9nN" firstAttribute="top" secondItem="6hZ-WP-k9f" secondAttribute="bottom" constant="27" id="0Pv-OK-32G"/>
+                            <constraint firstItem="d64-ox-FFw" firstAttribute="leading" secondItem="g90-sM-oN6" secondAttribute="leadingMargin" id="3ly-hv-pe3"/>
+                            <constraint firstItem="A5G-P3-AvM" firstAttribute="leading" secondItem="g90-sM-oN6" secondAttribute="leadingMargin" id="5lX-XE-mcQ"/>
+                            <constraint firstItem="6hZ-WP-k9f" firstAttribute="top" secondItem="EqC-Lp-P1Z" secondAttribute="bottom" constant="503" id="8nA-MH-EbX"/>
+                            <constraint firstItem="6hZ-WP-k9f" firstAttribute="leading" secondItem="g90-sM-oN6" secondAttribute="leadingMargin" constant="247" id="GSy-XC-p1m"/>
+                            <constraint firstItem="d64-ox-FFw" firstAttribute="top" secondItem="A5G-P3-AvM" secondAttribute="bottom" constant="17" id="Mso-3J-Mdw"/>
+                            <constraint firstItem="ios-fd-9nN" firstAttribute="trailing" secondItem="g90-sM-oN6" secondAttribute="trailingMargin" id="PZM-Ft-kYD"/>
+                            <constraint firstItem="ios-fd-9nN" firstAttribute="top" secondItem="d64-ox-FFw" secondAttribute="bottom" constant="54" id="ZMq-Zs-yya"/>
+                            <constraint firstItem="A5G-P3-AvM" firstAttribute="top" secondItem="EqC-Lp-P1Z" secondAttribute="bottom" constant="45" id="c25-g6-Z0L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A5G-P3-AvM" secondAttribute="trailing" constant="241" id="kyw-gr-n95"/>
+                            <constraint firstItem="XQe-WS-qb0" firstAttribute="top" secondItem="ios-fd-9nN" secondAttribute="bottom" constant="57" id="p5W-n2-gOX"/>
+                            <constraint firstItem="6hZ-WP-k9f" firstAttribute="trailing" secondItem="g90-sM-oN6" secondAttribute="trailingMargin" id="r31-tz-eYu"/>
+                            <constraint firstItem="d64-ox-FFw" firstAttribute="trailing" secondItem="g90-sM-oN6" secondAttribute="trailingMargin" id="rEN-yH-09J"/>
+                            <constraint firstItem="ios-fd-9nN" firstAttribute="leading" secondItem="g90-sM-oN6" secondAttribute="leadingMargin" constant="271" id="rXz-eS-QeI"/>
+                            <constraint firstItem="d64-ox-FFw" firstAttribute="top" secondItem="A5G-P3-AvM" secondAttribute="bottom" constant="17" id="te6-6r-hKz"/>
+                            <constraint firstItem="ios-fd-9nN" firstAttribute="top" secondItem="6hZ-WP-k9f" secondAttribute="bottom" constant="27" id="u9F-jd-atU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0C-Zh-79M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10208.799999999999" y="357.57121439280365"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qdr-ve-5qc">
+            <objects>
+                <viewController id="S21-Ma-Chj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Per-VZ-QGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="jfq-x1-G5s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Dy-eI-UBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EKw-Go-bVK">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDl-nY-16N">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="LoU-rC-Voy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tc-nq-yAU">
+                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="J0R-m1-gmW" kind="show" id="56T-If-zRh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vX-Am-aHc">
+                                <rect key="frame" x="16" y="211" width="343" height="152.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Now I did say that the Prologue would be the time I break the fourth wall the most, but it’s for a good cause. I also said that I was going to drag this Prologue out to approximately 20 Slides, and believe it or not, this is slide 12,  you’re doing well.
+
+I think you should know your appearance and role now, so I do think that I can shove you into Chapter 1: [title removed for spoiler reasons] and you should have a good guess on what’s going on.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fDl-nY-16N" firstAttribute="leading" secondItem="9Dy-eI-UBQ" secondAttribute="leadingMargin" constant="271" id="7Bw-ZP-fKh"/>
+                            <constraint firstItem="7vX-Am-aHc" firstAttribute="top" secondItem="EKw-Go-bVK" secondAttribute="bottom" constant="117" id="BJx-Ie-LI5"/>
+                            <constraint firstItem="2tc-nq-yAU" firstAttribute="top" secondItem="7vX-Am-aHc" secondAttribute="bottom" constant="8.5" id="Hun-8b-QOt"/>
+                            <constraint firstItem="2tc-nq-yAU" firstAttribute="top" secondItem="7vX-Am-aHc" secondAttribute="bottom" constant="8.5" id="INR-No-GUE"/>
+                            <constraint firstItem="fDl-nY-16N" firstAttribute="top" secondItem="2tc-nq-yAU" secondAttribute="bottom" constant="129" id="MtN-Oo-7Uv"/>
+                            <constraint firstItem="7vX-Am-aHc" firstAttribute="top" secondItem="EKw-Go-bVK" secondAttribute="bottom" constant="112" id="NZo-hT-7IT"/>
+                            <constraint firstItem="7vX-Am-aHc" firstAttribute="leading" secondItem="9Dy-eI-UBQ" secondAttribute="leadingMargin" id="QOR-1E-q6r"/>
+                            <constraint firstItem="EKw-Go-bVK" firstAttribute="top" secondItem="Per-VZ-QGx" secondAttribute="bottom" constant="45" id="TMc-Aw-CLk"/>
+                            <constraint firstItem="EKw-Go-bVK" firstAttribute="leading" secondItem="9Dy-eI-UBQ" secondAttribute="leadingMargin" id="Ula-Y9-JKg"/>
+                            <constraint firstItem="fDl-nY-16N" firstAttribute="trailing" secondItem="9Dy-eI-UBQ" secondAttribute="trailingMargin" id="cwY-kD-ggv"/>
+                            <constraint firstItem="2tc-nq-yAU" firstAttribute="leading" secondItem="9Dy-eI-UBQ" secondAttribute="leadingMargin" constant="247" id="dG4-XB-xdY"/>
+                            <constraint firstItem="fDl-nY-16N" firstAttribute="top" secondItem="2tc-nq-yAU" secondAttribute="bottom" constant="129" id="eMh-yh-W1W"/>
+                            <constraint firstItem="7vX-Am-aHc" firstAttribute="trailing" secondItem="9Dy-eI-UBQ" secondAttribute="trailingMargin" id="kWy-c2-QDq"/>
+                            <constraint firstItem="jfq-x1-G5s" firstAttribute="top" secondItem="fDl-nY-16N" secondAttribute="bottom" constant="57" id="n2w-Kw-Kty"/>
+                            <constraint firstItem="2tc-nq-yAU" firstAttribute="trailing" secondItem="9Dy-eI-UBQ" secondAttribute="trailingMargin" id="uye-Qg-NhY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EKw-Go-bVK" secondAttribute="trailing" constant="241" id="zZz-e9-r6U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCf-W5-YL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10937" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C9g-vl-Dg0">
+            <objects>
+                <viewController id="J0R-m1-gmW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCZ-DB-GWH"/>
+                        <viewControllerLayoutGuide type="bottom" id="tSP-Es-JUn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4kZ-ZE-UbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYx-9s-NCT">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI3-JC-a4S">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="58m-mC-aEw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-fG-7ll">
+                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EAt-uo-WhC" kind="show" id="h8x-w1-9L1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFd-3K-GR7">
+                                <rect key="frame" x="16" y="212" width="343" height="152"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">There will times where you will have to make a choice and the story will branch, and of course I will write both sides, which is fine, but I will make one lead to death after like 2-5 slides, and you will have to restart. I feel sorry for you if you make the wrong choice, you were such a good soul Ronn Krees. You will be missed, ok?
+
+Don’t do something you will regret.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aQf-fG-7ll" firstAttribute="trailing" secondItem="4kZ-ZE-UbS" secondAttribute="trailingMargin" id="4TA-YO-EfT"/>
+                            <constraint firstItem="XYx-9s-NCT" firstAttribute="top" secondItem="vCZ-DB-GWH" secondAttribute="bottom" constant="45" id="58j-ME-cA6"/>
+                            <constraint firstItem="QFd-3K-GR7" firstAttribute="leading" secondItem="4kZ-ZE-UbS" secondAttribute="leadingMargin" id="65L-7k-Red"/>
+                            <constraint firstItem="uI3-JC-a4S" firstAttribute="top" secondItem="aQf-fG-7ll" secondAttribute="bottom" constant="129" id="6M6-if-cvp"/>
+                            <constraint firstItem="uI3-JC-a4S" firstAttribute="top" secondItem="aQf-fG-7ll" secondAttribute="bottom" constant="129" id="8JZ-LY-UXq"/>
+                            <constraint firstItem="XYx-9s-NCT" firstAttribute="leading" secondItem="4kZ-ZE-UbS" secondAttribute="leadingMargin" id="AiO-Uz-WYh"/>
+                            <constraint firstItem="aQf-fG-7ll" firstAttribute="leading" secondItem="4kZ-ZE-UbS" secondAttribute="leadingMargin" constant="247" id="B1I-X6-ir0"/>
+                            <constraint firstItem="uI3-JC-a4S" firstAttribute="trailing" secondItem="4kZ-ZE-UbS" secondAttribute="trailingMargin" id="DHW-0V-eH8"/>
+                            <constraint firstItem="tSP-Es-JUn" firstAttribute="top" secondItem="uI3-JC-a4S" secondAttribute="bottom" constant="57" id="M32-bu-4pD"/>
+                            <constraint firstItem="aQf-fG-7ll" firstAttribute="top" secondItem="QFd-3K-GR7" secondAttribute="bottom" constant="8" id="PF3-5C-qwN"/>
+                            <constraint firstItem="QFd-3K-GR7" firstAttribute="top" secondItem="XYx-9s-NCT" secondAttribute="bottom" constant="117" id="RWB-AQ-o1h"/>
+                            <constraint firstItem="QFd-3K-GR7" firstAttribute="trailing" secondItem="4kZ-ZE-UbS" secondAttribute="trailingMargin" id="VFm-Ww-FBG"/>
+                            <constraint firstItem="aQf-fG-7ll" firstAttribute="top" secondItem="QFd-3K-GR7" secondAttribute="bottom" constant="8" id="ZmO-yF-WrL"/>
+                            <constraint firstItem="QFd-3K-GR7" firstAttribute="top" secondItem="XYx-9s-NCT" secondAttribute="bottom" constant="113" id="a5h-Gn-ESg"/>
+                            <constraint firstItem="uI3-JC-a4S" firstAttribute="leading" secondItem="4kZ-ZE-UbS" secondAttribute="leadingMargin" constant="271" id="aFv-Yh-XBr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XYx-9s-NCT" secondAttribute="trailing" constant="241" id="cDH-Ls-1V0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzd-j7-raI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11610" y="358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AAB-aS-60a">
+            <objects>
+                <viewController id="EAt-uo-WhC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Shb-gO-QRE"/>
+                        <viewControllerLayoutGuide type="bottom" id="mUy-Ef-Yp0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z6m-gx-JXd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XiK-io-wdm">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5l-fm-7rh">
+                                <rect key="frame" x="287" y="531" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="hKk-4X-yuy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WH8-iC-0Ve">
+                                <rect key="frame" x="263" y="372" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="23j-uf-3pL" kind="show" id="6oL-Qj-cop"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-rJ-wpS">
+                                <rect key="frame" x="16" y="212" width="343" height="152"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I do trust you to continue on, so maybe a 20 slide prologue is too many pages to go with. I can probably let you go on the next slide. When you wake up, you may be confused, but you really don’t have anything to worry about, considering once Chapter 1: [t title removed for spoiler reasons] starts, I will do my best to just tell the story and not interrupt.
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J5l-fm-7rh" firstAttribute="leading" secondItem="z6m-gx-JXd" secondAttribute="leadingMargin" constant="271" id="1nz-BX-y40"/>
+                            <constraint firstItem="J5l-fm-7rh" firstAttribute="top" secondItem="WH8-iC-0Ve" secondAttribute="bottom" constant="129" id="4E2-JE-wGe"/>
+                            <constraint firstItem="WH8-iC-0Ve" firstAttribute="top" secondItem="I5E-rJ-wpS" secondAttribute="bottom" constant="8" id="5nU-Yd-Yls"/>
+                            <constraint firstItem="I5E-rJ-wpS" firstAttribute="top" secondItem="XiK-io-wdm" secondAttribute="bottom" constant="117" id="9Ip-Im-AYa"/>
+                            <constraint firstItem="J5l-fm-7rh" firstAttribute="trailing" secondItem="z6m-gx-JXd" secondAttribute="trailingMargin" id="JST-xL-VX2"/>
+                            <constraint firstItem="WH8-iC-0Ve" firstAttribute="trailing" secondItem="z6m-gx-JXd" secondAttribute="trailingMargin" id="QuD-8T-HTz"/>
+                            <constraint firstItem="XiK-io-wdm" firstAttribute="leading" secondItem="z6m-gx-JXd" secondAttribute="leadingMargin" id="VdW-TC-MZI"/>
+                            <constraint firstItem="I5E-rJ-wpS" firstAttribute="top" secondItem="XiK-io-wdm" secondAttribute="bottom" constant="113" id="Xt6-tp-zDD"/>
+                            <constraint firstItem="I5E-rJ-wpS" firstAttribute="leading" secondItem="z6m-gx-JXd" secondAttribute="leadingMargin" id="ZRi-WX-gQF"/>
+                            <constraint firstItem="mUy-Ef-Yp0" firstAttribute="top" secondItem="J5l-fm-7rh" secondAttribute="bottom" constant="57" id="ZlF-cr-Hyn"/>
+                            <constraint firstItem="I5E-rJ-wpS" firstAttribute="trailing" secondItem="z6m-gx-JXd" secondAttribute="trailingMargin" id="cci-LL-FnC"/>
+                            <constraint firstItem="XiK-io-wdm" firstAttribute="top" secondItem="Shb-gO-QRE" secondAttribute="bottom" constant="45" id="kIW-3G-ebx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XiK-io-wdm" secondAttribute="trailing" constant="241" id="nZY-3a-qbH"/>
+                            <constraint firstItem="J5l-fm-7rh" firstAttribute="top" secondItem="WH8-iC-0Ve" secondAttribute="bottom" constant="129" id="qG8-Ib-nQR"/>
+                            <constraint firstItem="WH8-iC-0Ve" firstAttribute="top" secondItem="I5E-rJ-wpS" secondAttribute="bottom" constant="8" id="ye7-9B-WrE"/>
+                            <constraint firstItem="WH8-iC-0Ve" firstAttribute="leading" secondItem="z6m-gx-JXd" secondAttribute="leadingMargin" constant="247" id="yyg-UI-kqK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NN1-EK-Oph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12290" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ReG-Wa-Vmg">
+            <objects>
+                <viewController id="ek4-Kn-xHe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uUv-As-5J2"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMd-GT-hWB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="95n-NY-Y8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axg-bv-DmZ">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1K-iG-lW6">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-MU-dFw">
+                                <rect key="frame" x="16" y="164" width="343" height="238.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+Well done, you have reached Slide 15 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
+-----------------
+Status:
+Prologue: Completed
+Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
+
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqr-IG-QeF">
+                                <rect key="frame" x="157" y="552" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="The End For Right Now">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EXg-MU-dFw" firstAttribute="trailing" secondItem="95n-NY-Y8Y" secondAttribute="trailingMargin" id="9bm-Ad-S4g"/>
+                            <constraint firstItem="p1K-iG-lW6" firstAttribute="trailing" secondItem="95n-NY-Y8Y" secondAttribute="trailingMargin" id="Ejc-8d-xgh"/>
+                            <constraint firstItem="EXg-MU-dFw" firstAttribute="top" secondItem="axg-bv-DmZ" secondAttribute="bottom" constant="70" id="Jug-DL-TCW"/>
+                            <constraint firstItem="p1K-iG-lW6" firstAttribute="leading" secondItem="95n-NY-Y8Y" secondAttribute="leadingMargin" constant="271" id="NHZ-zy-PCz"/>
+                            <constraint firstItem="EXg-MU-dFw" firstAttribute="top" secondItem="axg-bv-DmZ" secondAttribute="bottom" constant="65" id="V2P-6f-vcr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="axg-bv-DmZ" secondAttribute="trailing" constant="241" id="Wi1-Rm-akA"/>
+                            <constraint firstItem="axg-bv-DmZ" firstAttribute="top" secondItem="uUv-As-5J2" secondAttribute="bottom" constant="45" id="d7T-Rd-f7I"/>
+                            <constraint firstItem="EXg-MU-dFw" firstAttribute="leading" secondItem="95n-NY-Y8Y" secondAttribute="leadingMargin" id="ien-Lw-7bj"/>
+                            <constraint firstItem="axg-bv-DmZ" firstAttribute="leading" secondItem="95n-NY-Y8Y" secondAttribute="leadingMargin" id="ksa-Nw-cKm"/>
+                            <constraint firstItem="tMd-GT-hWB" firstAttribute="top" secondItem="p1K-iG-lW6" secondAttribute="bottom" constant="57" id="md9-5X-Vgt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8T-Sc-3O4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13042" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5dH-Kn-L5y">
+            <objects>
+                <viewController id="23j-uf-3pL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ct-9u-1oS"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ng-tH-UvA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5h-tL-v4z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Prologue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2DG-NB-yhQ">
+                                <rect key="frame" x="16" y="65" width="102" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-Dd-un1">
+                                <rect key="frame" x="287" y="580" width="72" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="RETURN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="u3x-Bh-qRo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jac-TQ-YHU">
+                                <rect key="frame" x="263" y="421" width="96" height="30"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-S5-So4">
+                                <rect key="frame" x="16" y="212" width="343" height="219"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Well done, you have reached Slide 15 Ronn Krees. Best of luck with the future, I shall wake you from your daze now, and you will wake up at home, on your bed, at 3:00 am. Good Luck, Circle Wizard.
+-----------------
+Status:
+Prologue: Completed
+Chapter 1: Don’t Mess With a Satanist and a Powerful Klutz: Begin
+</string>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2DG-NB-yhQ" firstAttribute="top" secondItem="9ct-9u-1oS" secondAttribute="bottom" constant="45" id="5Zw-jC-ODN"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="jac-TQ-YHU" secondAttribute="bottom" constant="129" id="C2x-ml-Owg"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="E4O-uy-1w6"/>
+                            <constraint firstItem="2DG-NB-yhQ" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" id="EeN-zX-86H"/>
+                            <constraint firstItem="AO5-S5-So4" firstAttribute="top" secondItem="2DG-NB-yhQ" secondAttribute="bottom" constant="117" id="I72-lY-OMm"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="top" secondItem="9ct-9u-1oS" secondAttribute="bottom" constant="401" id="O3z-6K-bm5"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="271" id="OUe-AS-JaF"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="OZF-mG-gnB"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="jac-TQ-YHU" secondAttribute="bottom" constant="129" id="P0N-xz-148"/>
+                            <constraint firstItem="AO5-S5-So4" firstAttribute="trailing" secondItem="c5h-tL-v4z" secondAttribute="trailingMargin" id="Qpu-X6-dZ2"/>
+                            <constraint firstItem="jac-TQ-YHU" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" constant="247" id="Rka-dC-Dou"/>
+                            <constraint firstItem="8ng-tH-UvA" firstAttribute="top" secondItem="uVY-Dd-un1" secondAttribute="bottom" constant="57" id="T9A-Or-DFa"/>
+                            <constraint firstItem="AO5-S5-So4" firstAttribute="leading" secondItem="c5h-tL-v4z" secondAttribute="leadingMargin" id="d9o-bo-gPx"/>
+                            <constraint firstItem="AO5-S5-So4" firstAttribute="top" secondItem="2DG-NB-yhQ" secondAttribute="bottom" constant="113" id="lcd-65-2Os"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2DG-NB-yhQ" secondAttribute="trailing" constant="241" id="mK7-YM-v47"/>
+                            <constraint firstItem="uVY-Dd-un1" firstAttribute="top" secondItem="AO5-S5-So4" secondAttribute="bottom" constant="149" id="t8a-qS-5OI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4y-GY-BFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13040.799999999999" y="358.4707646176912"/>
         </scene>
     </scenes>
     <resources>
         <image name="CircleIcon" width="25" height="25"/>
+        <image name="Image" width="400" height="400"/>
         <image name="StoryIcon" width="30" height="30"/>
         <image name="f0c3096170bd8ac65efbbddc918ce554" width="1024" height="819"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NEq-Ek-Dd3"/>
+        <segue reference="tcm-Zm-mPZ"/>
     </inferredMetricsTieBreakers>
 </document>
